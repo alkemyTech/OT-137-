@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */; };
+		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
+		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
+		5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73327A1DD86008C15A5 /* ViewController.swift */; };
+		5C40E73727A1DD86008C15A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73527A1DD86008C15A5 /* Main.storyboard */; };
+		5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73827A1DD88008C15A5 /* Assets.xcassets */; };
+		5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */; };
+		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
+		5C40E75127A1DD88008C15A5 /* SomosMasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */; };
+		5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */; };
+		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
+		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C40E74327A1DD88008C15A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C40E72427A1DD86008C15A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C40E72B27A1DD86008C15A5;
+			remoteInfo = SomosMasApp;
+		};
+		5C40E74D27A1DD88008C15A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C40E72427A1DD86008C15A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C40E72B27A1DD86008C15A5;
+			remoteInfo = SomosMasApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomosMasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5C40E73327A1DD86008C15A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C40E73627A1DD86008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C40E73827A1DD88008C15A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C40E73B27A1DD88008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C40E73D27A1DD88008C15A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C40E74227A1DD88008C15A5 /* SomosMasAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppTests.swift; sourceTree = "<group>"; };
+		5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITests.swift; sourceTree = "<group>"; };
+		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C40E72927A1DD86008C15A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E73F27A1DD88008C15A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E74927A1DD88008C15A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C40E72327A1DD86008C15A5 = {
+			isa = PBXGroup;
+			children = (
+				5C40E72E27A1DD86008C15A5 /* SomosMasApp */,
+				5C40E74527A1DD88008C15A5 /* SomosMasAppTests */,
+				5C40E74F27A1DD88008C15A5 /* SomosMasAppUITests */,
+				5C40E72D27A1DD86008C15A5 /* Products */,
+				F06CA84BD7D1049AF297C98F /* Pods */,
+				861E0FC2397CB804A40BDC1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C40E72D27A1DD86008C15A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */,
+				5C40E74227A1DD88008C15A5 /* SomosMasAppTests.xctest */,
+				5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C40E72E27A1DD86008C15A5 /* SomosMasApp */ = {
+			isa = PBXGroup;
+			children = (
+				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
+				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
+				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
+				5C40E73527A1DD86008C15A5 /* Main.storyboard */,
+				5C40E73827A1DD88008C15A5 /* Assets.xcassets */,
+				5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */,
+				5C40E73D27A1DD88008C15A5 /* Info.plist */,
+			);
+			path = SomosMasApp;
+			sourceTree = "<group>";
+		};
+		5C40E74527A1DD88008C15A5 /* SomosMasAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */,
+			);
+			path = SomosMasAppTests;
+			sourceTree = "<group>";
+		};
+		5C40E74F27A1DD88008C15A5 /* SomosMasAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */,
+				5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */,
+			);
+			path = SomosMasAppUITests;
+			sourceTree = "<group>";
+		};
+		861E0FC2397CB804A40BDC1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */,
+				9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */,
+				B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06CA84BD7D1049AF297C98F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */,
+				E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */,
+				092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */,
+				C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */,
+				FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */,
+				8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C40E72B27A1DD86008C15A5 /* SomosMasApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C40E75627A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasApp" */;
+			buildPhases = (
+				9E6EF990603563360E07FBF3 /* [CP] Check Pods Manifest.lock */,
+				5C40E72827A1DD86008C15A5 /* Sources */,
+				5C40E72927A1DD86008C15A5 /* Frameworks */,
+				5C40E72A27A1DD86008C15A5 /* Resources */,
+				696B879DF7407E4F14D1146F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SomosMasApp;
+			productName = SomosMasApp;
+			productReference = 5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C40E74127A1DD88008C15A5 /* SomosMasAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C40E75927A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasAppTests" */;
+			buildPhases = (
+				F1B66FBE5A432A465BC23E77 /* [CP] Check Pods Manifest.lock */,
+				5C40E73E27A1DD88008C15A5 /* Sources */,
+				5C40E73F27A1DD88008C15A5 /* Frameworks */,
+				5C40E74027A1DD88008C15A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C40E74427A1DD88008C15A5 /* PBXTargetDependency */,
+			);
+			name = SomosMasAppTests;
+			productName = SomosMasAppTests;
+			productReference = 5C40E74227A1DD88008C15A5 /* SomosMasAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C40E74B27A1DD88008C15A5 /* SomosMasAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C40E75C27A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasAppUITests" */;
+			buildPhases = (
+				F9434B714A0DEFF4916E8209 /* [CP] Check Pods Manifest.lock */,
+				5C40E74827A1DD88008C15A5 /* Sources */,
+				5C40E74927A1DD88008C15A5 /* Frameworks */,
+				5C40E74A27A1DD88008C15A5 /* Resources */,
+				F35A7A69B758FDFDD04F23F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C40E74E27A1DD88008C15A5 /* PBXTargetDependency */,
+			);
+			name = SomosMasAppUITests;
+			productName = SomosMasAppUITests;
+			productReference = 5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C40E72427A1DD86008C15A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5C40E72B27A1DD86008C15A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5C40E74127A1DD88008C15A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5C40E72B27A1DD86008C15A5;
+					};
+					5C40E74B27A1DD88008C15A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5C40E72B27A1DD86008C15A5;
+					};
+				};
+			};
+			buildConfigurationList = 5C40E72727A1DD86008C15A5 /* Build configuration list for PBXProject "SomosMasApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C40E72327A1DD86008C15A5;
+			productRefGroup = 5C40E72D27A1DD86008C15A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C40E72B27A1DD86008C15A5 /* SomosMasApp */,
+				5C40E74127A1DD88008C15A5 /* SomosMasAppTests */,
+				5C40E74B27A1DD88008C15A5 /* SomosMasAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C40E72A27A1DD86008C15A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
+				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
+				5C40E73727A1DD86008C15A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E74027A1DD88008C15A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E74A27A1DD88008C15A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		696B879DF7407E4F14D1146F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6EF990603563360E07FBF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SomosMasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B66FBE5A432A465BC23E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SomosMasAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35A7A69B758FDFDD04F23F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9434B714A0DEFF4916E8209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SomosMasApp-SomosMasAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C40E72827A1DD86008C15A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
+				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
+				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E73E27A1DD88008C15A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C40E74827A1DD88008C15A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */,
+				5C40E75127A1DD88008C15A5 /* SomosMasAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C40E74427A1DD88008C15A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C40E72B27A1DD86008C15A5 /* SomosMasApp */;
+			targetProxy = 5C40E74327A1DD88008C15A5 /* PBXContainerItemProxy */;
+		};
+		5C40E74E27A1DD88008C15A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C40E72B27A1DD86008C15A5 /* SomosMasApp */;
+			targetProxy = 5C40E74D27A1DD88008C15A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C40E73527A1DD86008C15A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C40E73627A1DD86008C15A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C40E73B27A1DD88008C15A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C40E75427A1DD88008C15A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C40E75527A1DD88008C15A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C40E75727A1DD88008C15A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SomosMasApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C40E75827A1DD88008C15A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SomosMasApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C40E75A27A1DD88008C15A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SomosMasApp.app/SomosMasApp";
+			};
+			name = Debug;
+		};
+		5C40E75B27A1DD88008C15A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SomosMasApp.app/SomosMasApp";
+			};
+			name = Release;
+		};
+		5C40E75D27A1DD88008C15A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SomosMasApp;
+			};
+			name = Debug;
+		};
+		5C40E75E27A1DD88008C15A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SomosMasApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C40E72727A1DD86008C15A5 /* Build configuration list for PBXProject "SomosMasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C40E75427A1DD88008C15A5 /* Debug */,
+				5C40E75527A1DD88008C15A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C40E75627A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C40E75727A1DD88008C15A5 /* Debug */,
+				5C40E75827A1DD88008C15A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C40E75927A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C40E75A27A1DD88008C15A5 /* Debug */,
+				5C40E75B27A1DD88008C15A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C40E75C27A1DD88008C15A5 /* Build configuration list for PBXNativeTarget "SomosMasAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C40E75D27A1DD88008C15A5 /* Debug */,
+				5C40E75E27A1DD88008C15A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C40E72427A1DD86008C15A5 /* Project object */;
+}
