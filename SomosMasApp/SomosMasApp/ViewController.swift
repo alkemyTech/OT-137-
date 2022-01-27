@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     func getData(){
         
-        AlamofireAPIClient.shared.Get(responseType: [Users].self, endpoint: "users") (status, data in print(data ?? ""))
+        //AlamofireAPIClient.shared.Get(responseType: [Users].self, endpoint: "users") (status, data in print(data ?? ""))
     }
 
 
