@@ -10,8 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        getData()
         // Do any additional setup after loading the view.
+    }
+
+    func getData(){
+        
+        AlamofireAPIClient.shared.Get(responseType: [Users].self, endpoint: "users") (status, data in print(data ?? ""))
     }
 
 
