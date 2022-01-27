@@ -11,12 +11,12 @@
 		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
 		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
 		5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73327A1DD86008C15A5 /* ViewController.swift */; };
-		5C40E73727A1DD86008C15A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73527A1DD86008C15A5 /* Main.storyboard */; };
 		5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73827A1DD88008C15A5 /* Assets.xcassets */; };
 		5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */; };
 		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
 		5C40E75127A1DD88008C15A5 /* SomosMasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */; };
 		5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */; };
+		5C5568E827A1E26A005A7420 /* AlamofireAPICliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5568E727A1E26A005A7420 /* AlamofireAPICliente.swift */; };
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,6 @@
 		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C40E73327A1DD86008C15A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C40E73627A1DD86008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C40E73827A1DD88008C15A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C40E73B27A1DD88008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C40E73D27A1DD88008C15A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITests.swift; sourceTree = "<group>"; };
 		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C5568E727A1E26A005A7420 /* AlamofireAPICliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPICliente.swift; sourceTree = "<group>"; };
 		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,10 +119,10 @@
 				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
 				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
 				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
-				5C40E73527A1DD86008C15A5 /* Main.storyboard */,
 				5C40E73827A1DD88008C15A5 /* Assets.xcassets */,
 				5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */,
 				5C40E73D27A1DD88008C15A5 /* Info.plist */,
+				5C5568E727A1E26A005A7420 /* AlamofireAPICliente.swift */,
 			);
 			path = SomosMasApp;
 			sourceTree = "<group>";
@@ -164,7 +164,6 @@
 				FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */,
 				8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,7 +278,6 @@
 			files = (
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
-				5C40E73727A1DD86008C15A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +407,7 @@
 			files = (
 				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
+				5C5568E827A1E26A005A7420 /* AlamofireAPICliente.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,14 +445,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C40E73527A1DD86008C15A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C40E73627A1DD86008C15A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,7 +584,7 @@
 				INFOPLIST_FILE = SomosMasApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,7 +612,7 @@
 				INFOPLIST_FILE = SomosMasApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
