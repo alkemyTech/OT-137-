@@ -6,21 +6,30 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        getData()
+        fetchFilms()
+
+      
+        
+        //getData()
         // Do any additional setup after loading the view.
     }
-
-    func getData(){
-        
-        //AlamofireAPIClient.shared.Get(responseType: [Users].self, endpoint: "users") (status, data in print(data ?? ""))
-    }
-
+    
+    func fetchFilms() {
+        // 1
+        let request = AF.request()
+        // 2
+        request.responseJSON { (data) in
+          print(data)
+        }
+      }
+   
 
 }
 
