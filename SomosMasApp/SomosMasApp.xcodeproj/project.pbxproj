@@ -18,6 +18,9 @@
 		5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */; };
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
+		EAD69FB927A5E3E60015948E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB627A5E3E60015948E /* SignUpViewController.swift */; };
+		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
+		EAD69FBB27A5E3E60015948E /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD69FB827A5E3E60015948E /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
+		EAD69FB627A5E3E60015948E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EAD69FB827A5E3E60015948E /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 		5C40E72E27A1DD86008C15A5 /* SomosMasApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAD69FB527A5E28D0015948E /* SignUp */,
 				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
 				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
 				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
@@ -149,6 +156,16 @@
 				B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD69FB527A5E28D0015948E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				EAD69FB727A5E3E60015948E /* CustomTextField.swift */,
+				EAD69FB627A5E3E60015948E /* SignUpViewController.swift */,
+				EAD69FB827A5E3E60015948E /* SignUpViewController.xib */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
@@ -274,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
+				EAD69FBB27A5E3E60015948E /* SignUpViewController.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +422,9 @@
 			files = (
 				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
+				EAD69FB927A5E3E60015948E /* SignUpViewController.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
