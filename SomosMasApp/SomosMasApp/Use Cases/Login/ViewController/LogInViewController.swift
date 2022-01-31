@@ -9,14 +9,18 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    var loginViewModel = LoginViewModel()
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLoginButton()
+        hideLoginButton()
         setupTextFields()
-
+        bindData()
     }
     
     //MARK: Button Action
@@ -24,11 +28,25 @@ class LogInViewController: UIViewController {
         
     }
     
+    func bindData() {
+        loginViewModel.isButtonLoginShow.bind { [weak self] in
+            if $0 {
+                self?.showButton(self!.loginButton)
+            } else {
+                self?.hideLoginButton()
+            }
+        }
+    }
     
+    func showButton(_ button: UIButton) {
+        button.isEnabled = true
+        button.backgroundColor = .red
+    }
     
     // MARK: Buttons Setup
-    private func setupLoginButton() {
+    private func hideLoginButton() {
         loginButton.isEnabled = false
+        loginButton.backgroundColor = .white
     }
     
     
@@ -39,7 +57,14 @@ class LogInViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        //validateTextField()
+        if let emailText = emailTextField.text, let passwordText = passwordTextField.text {
+            loginViewModel.validateEmail(email: emailText, password: passwordText)
+        }
+        
+        loginViewModel.textFieldsInput()
+
     }
+    
+    
 
 }

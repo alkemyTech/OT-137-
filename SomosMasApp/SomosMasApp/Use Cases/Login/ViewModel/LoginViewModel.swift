@@ -24,24 +24,22 @@ class LoginViewModel {
     
     var isButtonLoginShow: Observable<Bool> = Observable(false)
     
-    func validateTextFields(email: String, password: String) {
+    func validateEmail(email: String, password: String) {
         isValidEmail = email.isValidEmail ? true : false
-        isValidPassword = password.isValidPassowrd ? true : false
+        isValidPassword = password.isValidPassword ? true : false
     }
     
-    func textFieldsInput() -> LoginButtonStatus {
+    func validatePassword(password: String) {
+        isValidPassword = password.isValidPassword ? true : false
+        print(isValidPassword)
+    }
+    
+    func textFieldsInput() {
         if isValidEmail && isValidPassword {
             isButtonLoginShow.value = true
-            return .Show
+        } else {
+            isButtonLoginShow.value = false
         }
-        return .Hide
     }
     
-}
-
-extension LoginViewModel {
-    enum LoginButtonStatus {
-        case Show
-        case Hide
-    }
 }
