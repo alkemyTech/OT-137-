@@ -29,8 +29,9 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LOGO-SOMOS MAS" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-Ik-gvN">
                     <rect key="frame" x="107" y="74" width="200" height="200"/>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-nD-X4J" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-nD-X4J" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                     <rect key="frame" x="20" y="284" width="374" height="45"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="IK0-81-tUt"/>
                     </constraints>
@@ -40,32 +41,36 @@
                         <action selector="Edit:" destination="-1" eventType="editingDidBegin" id="UwF-F9-epi"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-rk-vBY" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-rk-vBY" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                     <rect key="frame" x="20" y="349" width="374" height="45"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="k6k-Km-XQ7"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-9u-7sl" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-9u-7sl" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                     <rect key="frame" x="20" y="414" width="374" height="45"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="beG-Og-JlJ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-J9-toG" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-J9-toG" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                     <rect key="frame" x="20" y="479" width="374" height="45"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="ZrH-kT-J25"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-wg-1Ow" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-wg-1Ow" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                     <rect key="frame" x="20" y="544" width="374" height="45"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="DqG-It-8a3"/>
                     </constraints>
@@ -77,6 +82,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="nAF-ww-oDg"/>
                     </constraints>
+                    <color key="tintColor" systemColor="labelColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
                 </button>
@@ -118,24 +124,27 @@
     </objects>
     <designables>
         <designable name="8sY-wg-1Ow">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="205" height="34"/>
         </designable>
         <designable name="SJG-rk-vBY">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="85" height="34"/>
         </designable>
         <designable name="TFS-J9-toG">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="124.5" height="34"/>
         </designable>
         <designable name="bnl-9u-7sl">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="102" height="34"/>
         </designable>
         <designable name="sxE-nD-X4J">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="95.5" height="34"/>
         </designable>
     </designables>
     <resources>
         <image name="Background" width="1284" height="2778"/>
         <image name="LOGO-SOMOS MAS" width="200" height="200"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
