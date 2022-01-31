@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */; };
 		37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */; };
 		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
 		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
 		5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73327A1DD86008C15A5 /* ViewController.swift */; };
 		5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73827A1DD88008C15A5 /* Assets.xcassets */; };
 		5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */; };
-		1C4ABE0227A2E61E00632EB5 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4ABE0027A2E61E00632EB5 /* LogInViewController.xib */; };
-		1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */; };
 		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
 		5C40E75127A1DD88008C15A5 /* SomosMasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */; };
 		5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */; };
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
+		8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C17E27A7705500914A57 /* CredentialsModel.swift */; };
+		8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18127A770AE00914A57 /* LoginViewModel.swift */; };
+		8824C18527A771D800914A57 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8824C18427A771D800914A57 /* LogInViewController.xib */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,13 +43,12 @@
 
 /* Begin PBXFileReference section */
 		092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomosMasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C40E73327A1DD86008C15A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C4ABE0027A2E61E00632EB5 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
-		1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		5C40E73827A1DD88008C15A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C40E73B27A1DD88008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C40E73D27A1DD88008C15A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITests.swift; sourceTree = "<group>"; };
 		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8824C17E27A7705500914A57 /* CredentialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
+		8824C18127A770AE00914A57 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8824C18427A771D800914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +122,12 @@
 		5C40E72E27A1DD86008C15A5 /* SomosMasApp */ = {
 			isa = PBXGroup;
 			children = (
+				8824C17A27A76E4000914A57 /* Use Cases */,
+				8824C17927A76DCC00914A57 /* Resources */,
 				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
 				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
 				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
-				5C40E73827A1DD88008C15A5 /* Assets.xcassets */,
 				5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */,
-				1C4ABE0027A2E61E00632EB5 /* LogInViewController.xib */,
-				1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */,
 				5C40E73D27A1DD88008C15A5 /* Info.plist */,
 			);
 			path = SomosMasApp;
@@ -155,6 +158,65 @@
 				B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8824C17927A76DCC00914A57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C40E73827A1DD88008C15A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8824C17A27A76E4000914A57 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				8824C17B27A76E6800914A57 /* Login */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		8824C17B27A76E6800914A57 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8824C17C27A76E9400914A57 /* View */,
+				8824C17D27A7702500914A57 /* ViewController */,
+				8824C18027A7705800914A57 /* Model */,
+				8824C18327A770B600914A57 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8824C17C27A76E9400914A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8824C18427A771D800914A57 /* LogInViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8824C17D27A7702500914A57 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8824C18027A7705800914A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8824C17E27A7705500914A57 /* CredentialsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8824C18327A770B600914A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8824C18127A770AE00914A57 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
@@ -281,7 +343,7 @@
 			files = (
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
-				1C4ABE0227A2E61E00632EB5 /* LogInViewController.xib in Resources */,
+				8824C18527A771D800914A57 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
+				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
