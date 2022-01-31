@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="Qvi-gu-7mY" id="OtK-2n-4eU"/>
+                <outlet property="loginButton" destination="llB-Oy-bVY" id="TBr-e2-LeL"/>
+                <outlet property="passwordTextField" destination="P4j-wf-POr" id="J5h-yI-P8Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -73,6 +76,9 @@
                             <buttonConfiguration key="configuration" style="plain" title="Iniciar Sesión">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="ePd-Qa-PmW"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-Sk-Dq3">
                             <rect key="frame" x="120.66666666666666" y="46" width="146.99999999999997" height="41"/>

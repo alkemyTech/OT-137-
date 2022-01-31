@@ -9,21 +9,37 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoginButton()
+        setupTextFields()
 
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepadfasfsadre(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: Button Action
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        
     }
-    */
+    
+    
+    
+    // MARK: Buttons Setup
+    private func setupLoginButton() {
+        loginButton.isEnabled = false
+    }
+    
+    
+    // MARK: Text Fields Setup
+    func setupTextFields() {
+        emailTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        //validateTextField()
+    }
 
 }

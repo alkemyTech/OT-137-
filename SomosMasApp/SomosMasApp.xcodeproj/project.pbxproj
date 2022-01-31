@@ -20,7 +20,7 @@
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
 		8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C17E27A7705500914A57 /* CredentialsModel.swift */; };
 		8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18127A770AE00914A57 /* LoginViewModel.swift */; };
-		8824C18527A771D800914A57 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8824C18427A771D800914A57 /* LogInViewController.xib */; };
+		8824C18727A7738600914A57 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8824C18627A7738600914A57 /* LogInViewController.xib */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8824C17E27A7705500914A57 /* CredentialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
 		8824C18127A770AE00914A57 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		8824C18427A771D800914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		8824C18627A7738600914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +190,7 @@
 		8824C17C27A76E9400914A57 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8824C18427A771D800914A57 /* LogInViewController.xib */,
+				8824C18627A7738600914A57 /* LogInViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 			files = (
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
-				8824C18527A771D800914A57 /* LogInViewController.xib in Resources */,
+				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
