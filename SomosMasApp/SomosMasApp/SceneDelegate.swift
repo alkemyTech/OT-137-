@@ -2,11 +2,11 @@
 //  SceneDelegate.swift
 //  SomosMasApp
 //
+//  Created by Santiago Caraballo on 27/01/2022.
 //  Created by Mariano Uriel Delgado on 26/01/2022.
 //
 
 import UIKit
-
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = ViewController()
+        window.rootViewController = LogInViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

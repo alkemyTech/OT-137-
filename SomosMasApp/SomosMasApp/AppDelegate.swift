@@ -2,6 +2,7 @@
 //  AppDelegate.swift
 //  SomosMasApp
 //
+//  Created by Santiago Caraballo on 27/01/2022.
 //  Created by Mariano Uriel Delgado on 26/01/2022.
 //
 
