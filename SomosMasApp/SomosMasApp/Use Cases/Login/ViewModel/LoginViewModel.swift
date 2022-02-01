@@ -29,11 +29,6 @@ class LoginViewModel {
         isValidPassword = password.isValidPassword ? true : false
     }
     
-    func validatePassword(password: String) {
-        isValidPassword = password.isValidPassword ? true : false
-        print(isValidPassword)
-    }
-    
     func textFieldsInput() {
         if isValidEmail && isValidPassword {
             isButtonLoginShow.value = true

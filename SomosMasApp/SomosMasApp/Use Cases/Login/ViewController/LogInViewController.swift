@@ -30,17 +30,14 @@ class LogInViewController: UIViewController {
     
     func bindData() {
         loginViewModel.isButtonLoginShow.bind { [weak self] in
-            if $0 {
-                self?.showButton(self!.loginButton)
-            } else {
-                self?.hideLoginButton()
-            }
+            $0 ? self?.showLoginButton() : self?.hideLoginButton()
         }
+        
     }
     
-    func showButton(_ button: UIButton) {
-        button.isEnabled = true
-        button.backgroundColor = .red
+    func showLoginButton() {
+        loginButton.isEnabled = true
+        loginButton.backgroundColor = .red
     }
     
     // MARK: Buttons Setup
