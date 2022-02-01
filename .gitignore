@@ -91,3 +91,5 @@ iOSInjectionProject/
 
 # Cocoapods
 Pods/
+
+SomosMasApp/Podfile.lock
