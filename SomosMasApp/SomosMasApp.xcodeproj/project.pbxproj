@@ -400,6 +400,7 @@
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 				1C7E7D6A27AAA4AC0075AFAE /* SignUpViewController.xib in Resources */,
+				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
