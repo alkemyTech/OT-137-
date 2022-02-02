@@ -1,6 +1,6 @@
 //
 //  SignUpViewController.swift
-//  TestProject
+//  SomosMasApp
 //
 //  Created by Antonella Brini Vago on 26/01/2022.
 //
@@ -22,16 +22,16 @@ class SignUpViewController: UIViewController {
         
         IQKeyboardManager.shared().isEnabled = true
         
-        let us = UIImage(systemName: "person")
-        addLeftImage(txtField: nameField, andimage: us!)
-        let em = UIImage(systemName: "envelope")
-        addLeftImage(txtField: mailField, andimage: em!)
-        let ph = UIImage(systemName: "phone")
-        addLeftImage(txtField: phoneField, andimage: ph!)
-        let ps = UIImage(systemName: "lock")
-        addLeftImage(txtField: passwordField, andimage: ps!)
-        let cps = UIImage(systemName: "lock.rotation")
-        addLeftImage(txtField: confirmPasswordField, andimage: cps!)
+        let user = UIImage(systemName: "person")
+        addLeftImage(txtField: nameField, andimage: user!)
+        let mail = UIImage(systemName: "envelope")
+        addLeftImage(txtField: mailField, andimage: mail!)
+        let phone = UIImage(systemName: "phone")
+        addLeftImage(txtField: phoneField, andimage: phone!)
+        let password = UIImage(systemName: "lock")
+        addLeftImage(txtField: passwordField, andimage: password!)
+        let confirmPassword = UIImage(systemName: "lock.rotation")
+        addLeftImage(txtField: confirmPasswordField, andimage: confirmPassword!)
         
     }
     
