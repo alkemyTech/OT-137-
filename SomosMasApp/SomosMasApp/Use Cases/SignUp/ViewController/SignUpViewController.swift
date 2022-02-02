@@ -30,7 +30,7 @@ class SignUpViewController: UIViewController {
         addLeftImage(txtField: phoneField, andimage: ph!)
         let ps = UIImage(systemName: "lock")
         addLeftImage(txtField: passwordField, andimage: ps!)
-        let cps = UIImage(systemName: "lock")
+        let cps = UIImage(systemName: "lock.rotation")
         addLeftImage(txtField: confirmPasswordField, andimage: cps!)
         
     }
