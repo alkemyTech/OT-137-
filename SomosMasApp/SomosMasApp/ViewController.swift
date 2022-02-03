@@ -6,11 +6,15 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import Alamofire
+=======
+>>>>>>> develop
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+<<<<<<< HEAD
         
         super.viewDidLoad()
 
@@ -21,4 +25,12 @@ class ViewController: UIViewController {
    
 
 
+=======
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+>>>>>>> develop
 
