@@ -91,3 +91,6 @@ iOSInjectionProject/
 
 # Cocoapods
 Pods/
+
+# Archivo Podfile
+Podfile.lock
