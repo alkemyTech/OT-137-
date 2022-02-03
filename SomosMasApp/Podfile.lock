@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.5.0)
+  - IQKeyboardManager (6.5.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - IQKeyboardManager
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManager
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+
+PODFILE CHECKSUM: 2100bfb24384fa2700bec35619481b54d0f4870b
+
+COCOAPODS: 1.11.2
