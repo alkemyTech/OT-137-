@@ -25,6 +25,9 @@
 		8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18B27A7817200914A57 /* Strings+Extensions.swift */; };
 		8826AE2227A9435100215304 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2127A9435100215304 /* LoginTests.swift */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
+		EAD69FB927A5E3E60015948E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB627A5E3E60015948E /* SignUpViewController.swift */; };
+		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
+		EAD69FBB27A5E3E60015948E /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD69FB827A5E3E60015948E /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
+		EAD69FB627A5E3E60015948E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EAD69FB827A5E3E60015948E /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +186,7 @@
 		8824C17A27A76E4000914A57 /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				EAD69FB527A5E28D0015948E /* SignUp */,
 				8824C17B27A76E6800914A57 /* Login */,
 			);
 			path = "Use Cases";
@@ -258,6 +265,48 @@
 				8826AE2127A9435100215304 /* LoginTests.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		EAD69FB527A5E28D0015948E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				EAD69FB727A5E3E60015948E /* CustomTextField.swift */,
+				EAFBD19027AAF3FF00519749 /* ViewModel */,
+				EAFBD18F27AAF3F900519749 /* Model */,
+				EAFBD18E27AAF32800519749 /* ViewController */,
+				EAFBD18D27AAF31D00519749 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		EAFBD18D27AAF31D00519749 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAD69FB827A5E3E60015948E /* SignUpViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAFBD18E27AAF32800519749 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAD69FB627A5E3E60015948E /* SignUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EAFBD18F27AAF3F900519749 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
@@ -383,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
+				EAD69FBB27A5E3E60015948E /* SignUpViewController.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
@@ -518,7 +568,9 @@
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
+				EAD69FB927A5E3E60015948E /* SignUpViewController.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
