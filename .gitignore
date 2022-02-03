@@ -93,3 +93,4 @@ iOSInjectionProject/
 Pods/
 
 SomosMasApp/Podfile.lock
+.DS_Store
