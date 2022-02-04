@@ -34,20 +34,20 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-J4-NKg" userLabel="Credenciales">
                     <rect key="frame" x="35" y="274" width="358" height="100"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-wf-POr">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-wf-POr" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="40" width="358" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="WvK-Eg-ckh"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario o correo electrónico" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-gu-7mY">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario o correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-gu-7mY" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="358" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="vhX-XF-ZDf"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-Lt-npo">

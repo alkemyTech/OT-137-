@@ -11,8 +11,8 @@ class LogInViewController: UIViewController {
 
     var loginViewModel = LoginViewModel()
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UnderlinedtextField!
+    @IBOutlet weak var passwordTextField: UnderlinedtextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var credentials: UIView!
     
