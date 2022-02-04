@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
+                <outlet property="credentials" destination="xN1-J4-NKg" id="FA0-dh-1Yw"/>
                 <outlet property="emailTextField" destination="Qvi-gu-7mY" id="OtK-2n-4eU"/>
                 <outlet property="loginButton" destination="llB-Oy-bVY" id="TBr-e2-LeL"/>
                 <outlet property="passwordTextField" destination="P4j-wf-POr" id="J5h-yI-P8Z"/>
@@ -21,7 +22,10 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SomosMas_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="dyB-JL-tja" userLabel="Logo">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-Somos-Mas" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-uL-th2">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyB-JL-tja" userLabel="Logo">
                     <rect key="frame" x="0.0" y="44" width="428" height="150"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="DZP-AU-RK4"/>
@@ -30,20 +34,20 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-J4-NKg" userLabel="Credenciales">
                     <rect key="frame" x="35" y="274" width="358" height="100"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-wf-POr">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-wf-POr" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="40" width="358" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="WvK-Eg-ckh"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario o correo electrónico" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-gu-7mY">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario o correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-gu-7mY" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="358" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="vhX-XF-ZDf"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-Lt-npo">
@@ -54,7 +58,6 @@
                             </buttonConfiguration>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="P4j-wf-POr" secondAttribute="trailing" id="2R9-vF-f3f"/>
                         <constraint firstAttribute="bottom" secondItem="Knn-Lt-npo" secondAttribute="bottom" id="8RL-07-eBw"/>
@@ -70,6 +73,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AO9-ly-sfC" userLabel="Botones">
                     <rect key="frame" x="20" y="424" width="388" height="124"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-Sk-Dq3">
+                            <rect key="frame" x="120.66666666666666" y="46" width="146.99999999999997" height="41"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Crear cuenta">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="createButtonPressed:" destination="-1" eventType="touchUpInside" id="u5y-W8-YZ3"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llB-Oy-bVY">
                             <rect key="frame" x="119" y="0.0" width="150" height="41"/>
                             <state key="normal" title="Button"/>
@@ -80,15 +93,7 @@
                                 <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="ePd-Qa-PmW"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-Sk-Dq3">
-                            <rect key="frame" x="120.66666666666666" y="46" width="146.99999999999997" height="41"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Crear cuenta">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
-                            </buttonConfiguration>
-                        </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="llB-Oy-bVY" firstAttribute="centerX" secondItem="AO9-ly-sfC" secondAttribute="centerX" id="4R4-HG-LkH"/>
                         <constraint firstItem="1Yg-Sk-Dq3" firstAttribute="top" secondItem="llB-Oy-bVY" secondAttribute="bottom" constant="5" id="Brc-J0-SJk"/>
@@ -102,7 +107,9 @@
             <constraints>
                 <constraint firstItem="AO9-ly-sfC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.133929" id="ELQ-EV-bTu"/>
                 <constraint firstItem="AO9-ly-sfC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Gqt-0g-Ga1"/>
+                <constraint firstAttribute="trailing" secondItem="bqx-uL-th2" secondAttribute="trailing" id="N8x-tJ-lpQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xN1-J4-NKg" secondAttribute="trailing" constant="35" id="OCk-UN-3Zi"/>
+                <constraint firstItem="bqx-uL-th2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SJQ-zT-ZgV"/>
                 <constraint firstItem="dyB-JL-tja" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Svi-Yk-UmA"/>
                 <constraint firstItem="dyB-JL-tja" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="T86-Fr-3Ac"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AO9-ly-sfC" secondAttribute="trailing" constant="20" id="Veb-WE-4wY"/>
@@ -112,12 +119,14 @@
                 <constraint firstItem="AO9-ly-sfC" firstAttribute="top" secondItem="xN1-J4-NKg" secondAttribute="bottom" constant="50" id="ob5-zH-uCd"/>
                 <constraint firstItem="xN1-J4-NKg" firstAttribute="top" secondItem="dyB-JL-tja" secondAttribute="bottom" constant="80" id="qTP-fU-739"/>
                 <constraint firstItem="dyB-JL-tja" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vhe-qI-6oo"/>
+                <constraint firstItem="bqx-uL-th2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zD0-mS-2Pn"/>
+                <constraint firstAttribute="bottom" secondItem="bqx-uL-th2" secondAttribute="bottom" id="zf7-dW-td2"/>
             </constraints>
-            <point key="canvasLocation" x="130.43478260869566" y="121.20535714285714"/>
+            <point key="canvasLocation" x="130.37383177570092" y="121.16630669546437"/>
         </view>
     </objects>
     <resources>
-        <image name="SomosMas_Logo" width="1800" height="1200"/>
+        <image name="Background-Somos-Mas" width="1284" height="2778"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
