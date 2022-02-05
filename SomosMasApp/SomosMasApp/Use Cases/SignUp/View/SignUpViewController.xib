@@ -124,19 +124,19 @@
     </objects>
     <designables>
         <designable name="8sY-wg-1Ow">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="205" height="34"/>
         </designable>
         <designable name="SJG-rk-vBY">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="85" height="34"/>
         </designable>
         <designable name="TFS-J9-toG">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="124.5" height="34"/>
         </designable>
         <designable name="bnl-9u-7sl">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="102" height="34"/>
         </designable>
         <designable name="sxE-nD-X4J">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
+            <size key="intrinsicContentSize" width="95.5" height="34"/>
         </designable>
     </designables>
     <resources>
