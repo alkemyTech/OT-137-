@@ -2,14 +2,15 @@
 //  SignUpViewController.swift
 //  SomosMasApp
 //
-//  Created by Antonella Brini Vago on 26/01/2022.
+//  Created by Antonella Brini Vago on 04/02/2022.
 //
 
 import UIKit
-import IQKeyboardManager
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var nameField: UnderlinedtextField!
     @IBOutlet weak var mailField: UnderlinedtextField!
     @IBOutlet weak var phoneField: UnderlinedtextField!
@@ -19,8 +20,35 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDismissKeyboard()
-        
-        IQKeyboardManager.shared().isEnabled = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setupTextFields()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.unregisterKeyboardNotifications()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        setupTextFields()
+    }
+    
+    func setupTextFields() {
+        nameField.setupUnderline()
+        mailField.setupUnderline()
+        phoneField.setupUnderline()
+        passwordField.setupUnderline()
+        passwordField.isSecureTextEntry = true
+        confirmPasswordField.setupUnderline()
+        confirmPasswordField.isSecureTextEntry = true
         
         let user = UIImage(systemName: "person")
         addLeftImage(txtField: nameField, andimage: user!)
@@ -32,34 +60,66 @@ class SignUpViewController: UIViewController {
         addLeftImage(txtField: passwordField, andimage: password!)
         let confirmPassword = UIImage(systemName: "lock.rotation")
         addLeftImage(txtField: confirmPasswordField, andimage: confirmPassword!)
-        
-    }
-    
-    @IBAction func Edit(_ sender: Any) {
-
-//        nameField.underline.borderWidth = 1
-//        nameField.underline.borderColor = UIColor.cyan.cgColor
     }
     
     func addLeftImage(txtField: UITextField, andimage img: UIImage) {
-        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 15, width: 20, height: 20))
+        let leftImageView = UIImageView()
         leftImageView.image = img
         txtField.leftView = leftImageView
         txtField.leftViewMode = .always
     }
-    
+
 }
 
 extension SignUpViewController {
     func setUpDismissKeyboard() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
 
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
-
-
-
 }
+
+
+extension SignUpViewController {
+    
+    private func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    private func unregisterKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        
+        let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
+        
+        let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
+       
+        UIView.animate(withDuration: animationDuration) {
+            self.stackScrollViewConstraint.constant = keyboardFrame.height
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        
+        let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
+       
+        UIView.animate(withDuration: animationDuration) {
+            self.stackScrollViewConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+}
+
+
+
+
