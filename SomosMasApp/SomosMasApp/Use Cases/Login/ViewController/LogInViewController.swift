@@ -86,23 +86,41 @@ class LogInViewController: UIViewController {
     
     // Layout Setup
     private func setupLayout() {
+        
+        // Creating Logo contraints
         let topImageContainerView = UIView()
         view.addSubview(topImageContainerView)
         topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
-       
         topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25).isActive = true
         topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
-        topImageContainerView.addSubview(somosMasImageView)
         
+        //Subview contraints
+        topImageContainerView.addSubview(somosMasImageView)
         somosMasImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
         somosMasImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
 
+        //credentials constraints
         credentials.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor, constant: 40).isActive = true
+        
+        
+        //Icons on the left of text fields
+        let user = UIImage(systemName: "person")
+        addLeftImage(txtField: emailTextField, andimage: user!)
+        let password = UIImage(systemName: "lock")
+        addLeftImage(txtField: passwordTextField, andimage: password!)
         
     }
     
-
+    func addLeftImage(txtField: UITextField, andimage img: UIImage) {
+        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 15, width: 20, height: 20))
+        leftImageView.image = img
+        txtField.leftView = leftImageView
+        txtField.leftViewMode = .always
+    }
+    
+    
+    
 }
