@@ -59,7 +59,6 @@ class LogInViewController: UIViewController {
     
     func showLoginButton() {
         loginButton.isEnabled = true
-        loginButton.backgroundColor = .red
     }
     
     // MARK: Buttons Setup
