@@ -42,7 +42,7 @@ class LogInViewController: UIViewController {
     
     //MARK: Button Action
     @IBAction func loginButtonPressed(_ sender: Any) {
-        
+        loginViewModel.loginUser()
     }
     
     @IBAction func createButtonPressed(_ sender: UIButton) {
