@@ -109,15 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C7E7D6727AAA4960075AFAE /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				1C7E7D6827AAA4AC0075AFAE /* SignUpViewController.xib */,
-				1C7E7D6927AAA4AC0075AFAE /* SignUpViewController.swift */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
 		5C40E72327A1DD86008C15A5 = {
 			isa = PBXGroup;
 			children = (
@@ -280,8 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				EAD69FB727A5E3E60015948E /* CustomTextField.swift */,
-				EAFBD19027AAF3FF00519749 /* ViewModel */,
-				EAFBD18F27AAF3F900519749 /* Model */,
 				EAFBD18E27AAF32800519749 /* ViewController */,
 				EAFBD18D27AAF31D00519749 /* View */,
 			);
@@ -302,20 +291,6 @@
 				EAD69FB627A5E3E60015948E /* SignUpViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		EAFBD18F27AAF3F900519749 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
@@ -440,7 +415,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7E7D6D27AABCB30075AFAE /* LogInViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				EAD69FBB27A5E3E60015948E /* SignUpViewController.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,

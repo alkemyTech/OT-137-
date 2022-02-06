@@ -48,6 +48,7 @@ class LogInViewController: UIViewController {
     @IBAction func createButtonPressed(_ sender: UIButton) {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(signUpVC, animated: true)
+        
     }
     
     func bindData() {
@@ -112,6 +113,15 @@ class LogInViewController: UIViewController {
         let password = UIImage(systemName: "lock")
         addLeftImage(txtField: passwordTextField, andimage: password!)
         
+        //Spinner
+        view.addSubview(indicatorView)
+        NSLayoutConstraint.activate([
+                indicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                indicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+            
+        
+        
     }
     
     func addLeftImage(txtField: UITextField, andimage img: UIImage) {
@@ -121,6 +131,14 @@ class LogInViewController: UIViewController {
         txtField.leftViewMode = .always
     }
     
+   
+    lazy var indicatorView: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView(style: .medium)
+        view.color = .white
+        view.startAnimating()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     
 }
