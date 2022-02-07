@@ -20,9 +20,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDismissKeyboard()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         setupTextFields()
     }
     
@@ -46,9 +43,7 @@ class SignUpViewController: UIViewController {
         mailField.setupUnderline()
         phoneField.setupUnderline()
         passwordField.setupUnderline()
-        passwordField.isSecureTextEntry = true
         confirmPasswordField.setupUnderline()
-        confirmPasswordField.isSecureTextEntry = true
         
         let user = UIImage(systemName: "person")
         addLeftImage(txtField: nameField, andimage: user!)

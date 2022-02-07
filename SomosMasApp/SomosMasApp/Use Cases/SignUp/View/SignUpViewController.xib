@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cja-39-wCD">
-                    <rect key="frame" x="44" y="0.0" width="326" height="1179"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-g4-cSg">
                     <rect key="frame" x="44" y="0.0" width="326" height="1200"/>
@@ -107,23 +107,13 @@
                             </subviews>
                             <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
                         </stackView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53m-5h-d0b">
-                            <rect key="frame" x="0.0" y="0.0" width="326" height="0.0"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" id="dJN-aY-YET"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Cmv-Us-oue" firstAttribute="leading" secondItem="H3a-g4-cSg" secondAttribute="leading" id="63q-aB-t8h"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="6LD-xH-yCL"/>
                         <constraint firstAttribute="bottom" secondItem="Cmv-Us-oue" secondAttribute="bottom" constant="20" id="aic-SG-TzX"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="epp-NG-Vf0"/>
                         <constraint firstAttribute="trailing" secondItem="Cmv-Us-oue" secondAttribute="trailing" id="hiQ-39-2k7"/>
                         <constraint firstItem="Cmv-Us-oue" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="msO-NU-0Oz"/>
-                        <constraint firstAttribute="trailing" secondItem="53m-5h-d0b" secondAttribute="trailing" id="psf-0C-aRO"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="centerX" secondItem="H3a-g4-cSg" secondAttribute="centerX" id="wvj-GK-Lgo"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="xMd-4I-U3T"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -131,13 +121,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="H3a-g4-cSg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Fc-4v-oiG"/>
-                <constraint firstItem="cja-39-wCD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Cvr-qe-jl7"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Cvr-qe-jl7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H3a-g4-cSg" secondAttribute="trailing" id="D9m-rW-HdJ"/>
                 <constraint firstItem="H3a-g4-cSg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dk4-Jf-MIh"/>
-                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QbI-de-5V8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QbI-de-5V8"/>
+                <constraint firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
                 <constraint firstAttribute="bottom" secondItem="H3a-g4-cSg" secondAttribute="bottom" id="deO-Ov-Iht" userLabel="anchorBottomScroll"/>
-                <constraint firstItem="cja-39-wCD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iRH-XE-8lp"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iRH-XE-8lp"/>
                 <constraint firstItem="H3a-g4-cSg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rr5-Uk-Lec"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
