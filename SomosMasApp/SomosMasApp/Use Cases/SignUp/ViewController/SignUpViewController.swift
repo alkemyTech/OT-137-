@@ -9,6 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    var signUpViewModel = SignUpViewModel()
+    
     @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var nameField: UnderlinedtextField!
@@ -16,19 +18,57 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneField: UnderlinedtextField!
     @IBOutlet weak var passwordField: UnderlinedtextField!
     @IBOutlet weak var confirmPasswordField: UnderlinedtextField!
+
+    @IBOutlet weak var createAccountButtom: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDismissKeyboard()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        bindData()
+        hideSignUpButton()
+        setupTextBehavior()
         setupTextFields()
     }
     
+    func bindData() {
+        signUpViewModel.isButtonSignUpShow.bind { [weak self] in
+            $0 ? self?.showSignUpButton() : self?.hideSignUpButton()
+        }
+        
+    }
+    
+    func showSignUpButton() {
+        createAccountButtom.isEnabled = true
+        createAccountButtom.backgroundColor = .red
+    }
+
+    private func hideSignUpButton() {
+        createAccountButtom.isEnabled = false
+        createAccountButtom.backgroundColor = .clear
+    }
+    
+    func setupTextBehavior() {
+        mailField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if let emailText = mailField.text, let passwordText = passwordField.text {
+            signUpViewModel.validateEmail(email: emailText, password: passwordText)
+        }
+        
+        signUpViewModel.textFieldsInput()
+    }
+    
+    @IBAction func createAccountAction(_ sender: Any) {
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(false)
         self.registerKeyboardNotifications()
+        setupTextFields()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -46,9 +86,8 @@ class SignUpViewController: UIViewController {
         mailField.setupUnderline()
         phoneField.setupUnderline()
         passwordField.setupUnderline()
-        passwordField.isSecureTextEntry = true
         confirmPasswordField.setupUnderline()
-        confirmPasswordField.isSecureTextEntry = true
+
         
         let user = UIImage(systemName: "person")
         addLeftImage(txtField: nameField, andimage: user!)
@@ -68,6 +107,8 @@ class SignUpViewController: UIViewController {
         txtField.leftView = leftImageView
         txtField.leftViewMode = .always
     }
+    
+    
 
 }
 
