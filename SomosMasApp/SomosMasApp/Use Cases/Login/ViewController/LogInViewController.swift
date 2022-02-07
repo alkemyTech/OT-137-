@@ -34,7 +34,6 @@ class LogInViewController: UIViewController {
         bindData()
         
         //UI LogInLayout
-        
         setupLayout()
         
         
@@ -135,7 +134,6 @@ class LogInViewController: UIViewController {
     lazy var indicatorView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(style: .medium)
         view.color = .white
-        view.startAnimating()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
