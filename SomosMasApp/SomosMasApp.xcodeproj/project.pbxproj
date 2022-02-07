@@ -758,6 +758,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://ongapi.alkemy.org/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				SomosMas_ServerURL = "http://ongapi.alkemy.org/";
@@ -787,6 +788,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://ongapi.alkemy.org/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				SomosMas_ServerURL = "http://ongapi.alkemy.org/";
