@@ -30,20 +30,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0s2-vW-XvD"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6gE-Mu-00R"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A4C-tb-kDY"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IVH-Us-X5x"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JLn-bw-n5N"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V29-ne-AWK"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VOg-wD-2OT"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Wjd-dl-D0c"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Y1t-V0-E0d"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YC3-5x-J9M"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bVr-sv-clq"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="btG-cT-RLU"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ick-dw-6Tf"/>
-                            <constraint firstItem="eaO-lR-onj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ues-ym-FL1"/>
+                            <constraint firstItem="eaO-lR-onj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WJA-YY-akI"/>
+                            <constraint firstItem="eaO-lR-onj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZGg-FR-O6X"/>
+                            <constraint firstItem="eaO-lR-onj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ezz-9C-JNG"/>
+                            <constraint firstItem="eaO-lR-onj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pwZ-tY-7PD"/>
                         </constraints>
                     </view>
                 </viewController>
