@@ -41,9 +41,9 @@ class LoginViewModel {
     
     func loginUser() {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
-            print(loginDataResponse)
+            //TODO: [OT137-76]
         } failure: { error in
-            print(error?.localizedDescription)
+            //TODO: [OT137-26]
         }
 
     }

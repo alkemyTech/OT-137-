@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LoginDataResponse: Codable {
+struct LoginDataResponse: Codable {
     
     let user: [User]
     let token: String
@@ -19,7 +19,7 @@ class LoginDataResponse: Codable {
     
 }
 
-class User: Codable {
+struct User: Codable {
     let id: Int
     let name: String
     let email: String

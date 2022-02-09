@@ -20,7 +20,6 @@ class APIManager {
         AF.request(url, method: .post, parameters: params,  encoder: JSONParameterEncoder.default).validate(statusCode: 200...299).responseDecodable(of: LoginDataResponse.self) {
             response in
             
-            print(response.debugDescription)
             
             if let userResponse = response.value {
                 sucess(userResponse)
