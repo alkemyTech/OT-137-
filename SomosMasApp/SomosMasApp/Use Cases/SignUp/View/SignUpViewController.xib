@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,135 +10,130 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
-                <outlet property="confirmPasswordField" destination="8sY-wg-1Ow" id="4j4-lT-wNG"/>
-                <outlet property="mailField" destination="SJG-rk-vBY" id="OX9-pr-VBy"/>
-                <outlet property="nameField" destination="sxE-nD-X4J" id="xeR-FA-Ex2"/>
-                <outlet property="passwordField" destination="TFS-J9-toG" id="mcH-rY-AE2"/>
-                <outlet property="phoneField" destination="bnl-9u-7sl" id="xK4-Yd-1b5"/>
+                <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
+                <outlet property="mailField" destination="h7a-R8-ptT" id="cX6-OQ-etL"/>
+                <outlet property="nameField" destination="WCc-1P-lpi" id="NBO-eM-rP5"/>
+                <outlet property="passwordField" destination="Aru-LW-Ygn" id="GjK-qe-r2Q"/>
+                <outlet property="phoneField" destination="SSd-xa-30m" id="rj9-Gt-bBC"/>
+                <outlet property="stackScrollViewConstraint" destination="deO-Ov-Iht" id="cBC-6H-hed"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-sv-KxS">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cja-39-wCD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LOGO-SOMOS MAS" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-Ik-gvN">
-                    <rect key="frame" x="107" y="74" width="200" height="200"/>
-                </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-nD-X4J" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="284" width="374" height="45"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-g4-cSg">
+                    <rect key="frame" x="44" y="0.0" width="326" height="1200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-Us-oue">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="695"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LOGO-SOMOS MAS" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-iC-J4Y">
+                                    <rect key="frame" x="20" y="0.0" width="286" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="xyF-1z-qBj"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="220" width="286" height="45"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="9iI-qR-wE2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-R8-ptT" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="285" width="286" height="45"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="JCb-38-7lP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-xa-30m" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="350" width="286" height="45"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Tq6-o7-qwo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aru-LW-Ygn" userLabel="Contraseña" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="415" width="286" height="45"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="5ts-Nt-gWa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLS-6Q-ydh" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="480" width="286" height="45"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="eBt-Kc-wGa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-ib-L9V">
+                                    <rect key="frame" x="20" y="545" width="286" height="150"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-0s-F1u">
+                                            <rect key="frame" x="68" y="25" width="150" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="07Q-ZG-Bgv"/>
+                                                <constraint firstAttribute="width" constant="150" id="iVO-V3-RJx"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="labelColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="FCX-Mi-Cm5"/>
+                                        <constraint firstItem="Ezg-0s-F1u" firstAttribute="top" secondItem="fJF-ib-L9V" secondAttribute="top" constant="25" id="bDj-Qr-PeL"/>
+                                        <constraint firstItem="Ezg-0s-F1u" firstAttribute="centerX" secondItem="fJF-ib-L9V" secondAttribute="centerX" id="kmn-pI-trf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        </stackView>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="45" id="IK0-81-tUt"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="leading" secondItem="H3a-g4-cSg" secondAttribute="leading" id="63q-aB-t8h"/>
+                        <constraint firstAttribute="bottom" secondItem="Cmv-Us-oue" secondAttribute="bottom" constant="20" id="aic-SG-TzX"/>
+                        <constraint firstAttribute="trailing" secondItem="Cmv-Us-oue" secondAttribute="trailing" id="hiQ-39-2k7"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="msO-NU-0Oz"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="xMd-4I-U3T"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="Edit:" destination="-1" eventType="editingDidBegin" id="UwF-F9-epi"/>
-                    </connections>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJG-rk-vBY" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="349" width="374" height="45"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="k6k-Km-XQ7"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-9u-7sl" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="414" width="374" height="45"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="beG-Og-JlJ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-J9-toG" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="479" width="374" height="45"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="ZrH-kT-J25"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-wg-1Ow" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="544" width="374" height="45"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="DqG-It-8a3"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-rs-Zud">
-                    <rect key="frame" x="152" y="634" width="110" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="nAF-ww-oDg"/>
-                    </constraints>
-                    <color key="tintColor" systemColor="labelColor"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
-                </button>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="8sY-wg-1Ow" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0qx-cI-mdI"/>
-                <constraint firstItem="bnl-9u-7sl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Rb-dc-dYh"/>
-                <constraint firstItem="8sY-wg-1Ow" firstAttribute="top" secondItem="TFS-J9-toG" secondAttribute="bottom" constant="20" id="6C7-Br-CXd"/>
-                <constraint firstItem="bfP-rs-Zud" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8FP-IE-yA7"/>
-                <constraint firstItem="pDU-sv-KxS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ag9-Iv-6bf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TFS-J9-toG" secondAttribute="trailing" constant="20" id="DNI-UT-TWW"/>
-                <constraint firstItem="pDU-sv-KxS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DhC-RA-uZg"/>
-                <constraint firstItem="TFS-J9-toG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DkJ-Ed-oR8"/>
-                <constraint firstItem="TFS-J9-toG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Epc-Ue-u8K"/>
-                <constraint firstItem="SJG-rk-vBY" firstAttribute="top" secondItem="sxE-nD-X4J" secondAttribute="bottom" constant="20" id="FR0-yh-803"/>
-                <constraint firstItem="TFS-J9-toG" firstAttribute="top" secondItem="bnl-9u-7sl" secondAttribute="bottom" constant="20" id="IUN-kq-5zy"/>
-                <constraint firstAttribute="bottom" secondItem="pDU-sv-KxS" secondAttribute="bottom" id="Ndt-46-HX1"/>
-                <constraint firstAttribute="trailing" secondItem="pDU-sv-KxS" secondAttribute="trailing" id="Qsr-w5-Nqw"/>
-                <constraint firstItem="SJG-rk-vBY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Tfz-Rp-OYz"/>
-                <constraint firstItem="8sY-wg-1Ow" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Wbf-TS-CqJ"/>
-                <constraint firstItem="bfP-rs-Zud" firstAttribute="top" secondItem="8sY-wg-1Ow" secondAttribute="bottom" constant="45" id="Xjv-xI-dV2"/>
-                <constraint firstItem="sxE-nD-X4J" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aoT-cu-h0x"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sxE-nD-X4J" secondAttribute="trailing" constant="20" id="ayk-qY-VMM"/>
-                <constraint firstItem="bnl-9u-7sl" firstAttribute="top" secondItem="SJG-rk-vBY" secondAttribute="bottom" constant="20" id="ceY-Nr-gvB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bnl-9u-7sl" secondAttribute="trailing" constant="20" id="dGj-sV-Mxi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SJG-rk-vBY" secondAttribute="trailing" constant="20" id="f5c-Nx-7dX"/>
-                <constraint firstItem="bnl-9u-7sl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="mwA-S2-cOs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8sY-wg-1Ow" secondAttribute="trailing" constant="20" id="pPs-o7-od9"/>
-                <constraint firstItem="sxE-nD-X4J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pVM-ia-A05"/>
-                <constraint firstItem="sxE-nD-X4J" firstAttribute="top" secondItem="ZWk-Ik-gvN" secondAttribute="bottom" constant="10" id="pfa-Od-aoe"/>
-                <constraint firstItem="SJG-rk-vBY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="sHh-zi-bIV"/>
-                <constraint firstItem="ZWk-Ik-gvN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="tPH-mi-KL5"/>
-                <constraint firstItem="ZWk-Ik-gvN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wLi-Jz-z6s"/>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Fc-4v-oiG"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Cvr-qe-jl7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H3a-g4-cSg" secondAttribute="trailing" id="D9m-rW-HdJ"/>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dk4-Jf-MIh"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QbI-de-5V8"/>
+                <constraint firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
+                <constraint firstAttribute="bottom" secondItem="H3a-g4-cSg" secondAttribute="bottom" id="deO-Ov-Iht" userLabel="anchorBottomScroll"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iRH-XE-8lp"/>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rr5-Uk-Lec"/>
             </constraints>
-            <point key="canvasLocation" x="136.23188405797103" y="95.089285714285708"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="104.34782608695653" y="-780.13392857142856"/>
         </view>
     </objects>
-    <designables>
-        <designable name="8sY-wg-1Ow">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
-        </designable>
-        <designable name="SJG-rk-vBY">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
-        </designable>
-        <designable name="TFS-J9-toG">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
-        </designable>
-        <designable name="bnl-9u-7sl">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
-        </designable>
-        <designable name="sxE-nD-X4J">
-            <size key="intrinsicContentSize" width="-1" height="35"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Background" width="1284" height="2778"/>
         <image name="LOGO-SOMOS MAS" width="200" height="200"/>

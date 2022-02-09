@@ -6,8 +6,6 @@ target 'SomosMasApp' do
   use_frameworks!
 pod 'Alamofire', '~> 5.5'
   # Pods for SomosMasApp
-  
-pod 'IQKeyboardManager'
 
   target 'SomosMasAppTests' do
     inherit! :search_paths
