@@ -42,7 +42,7 @@ class LogInViewController: UIViewController {
     
     //MARK: Button Action
     @IBAction func loginButtonPressed(_ sender: Any) {
-        
+        loginViewModel.loginUser()
     }
     
     @IBAction func createButtonPressed(_ sender: UIButton) {
@@ -59,7 +59,6 @@ class LogInViewController: UIViewController {
     
     func showLoginButton() {
         loginButton.isEnabled = true
-        loginButton.backgroundColor = .red
     }
     
     // MARK: Buttons Setup
