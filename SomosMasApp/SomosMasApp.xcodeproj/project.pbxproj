@@ -761,7 +761,6 @@
 				SERVER_URL = "http://ongapi.alkemy.org/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				SomosMas_ServerURL = "http://ongapi.alkemy.org/";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -791,7 +790,6 @@
 				SERVER_URL = "http://ongapi.alkemy.org/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				SomosMas_ServerURL = "http://ongapi.alkemy.org/";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
