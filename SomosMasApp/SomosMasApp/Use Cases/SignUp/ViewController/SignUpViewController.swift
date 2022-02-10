@@ -78,6 +78,7 @@ class SignUpViewController: UIViewController {
         guard let password = self.passwordField.text else { return }
         
         signUPViewModel.SignUp(name: name, email: email, password: password)
+        showAlert()
         }
     }
 extension SignUpViewController{
