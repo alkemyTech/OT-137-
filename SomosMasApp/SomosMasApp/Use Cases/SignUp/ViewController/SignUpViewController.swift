@@ -8,7 +8,9 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
+    var signUPViewModel = SignUpViewModel()
+    
     @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var nameField: UnderlinedtextField!
@@ -16,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneField: UnderlinedtextField!
     @IBOutlet weak var passwordField: UnderlinedtextField!
     @IBOutlet weak var confirmPasswordField: UnderlinedtextField!
+    @IBOutlet weak var btnSignUp: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +41,11 @@ class SignUpViewController: UIViewController {
         setupTextFields()
     }
     
+   
+   
+    
     func setupTextFields() {
+        
         nameField.setupUnderline()
         mailField.setupUnderline()
         phoneField.setupUnderline()
@@ -64,6 +71,29 @@ class SignUpViewController: UIViewController {
         txtField.leftViewMode = .always
     }
 
+    @IBAction func btnSignUp(_ sender: UIButton) {
+        
+        guard let name = self.nameField.text else { return }
+        guard let email = self.mailField.text else { return }
+        guard let password = self.passwordField.text else { return }
+        
+        signUPViewModel.SignUp(name: name, email: email, password: password)
+        }
+    }
+extension SignUpViewController{
+    
+    func showAlert(){
+        
+        let showAlert = UIAlertController(title: "Succes", message: "User was succesfully register", preferredStyle: .alert)
+        
+        showAlert.addAction(UIAlertAction(title: "Accept", style: .cancel, handler: { action in
+            
+            _ = self.navigationController?.popViewController(animated: true)
+        }))
+        
+        present (showAlert, animated: true)
+        
+    }
 }
 
 extension SignUpViewController {
@@ -76,8 +106,6 @@ extension SignUpViewController {
         view.endEditing(true)
     }
 }
-
-
 extension SignUpViewController {
     
     private func registerKeyboardNotifications() {

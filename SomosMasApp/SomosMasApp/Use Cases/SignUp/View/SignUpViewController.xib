@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnSignUp" destination="Ezg-0s-F1u" id="jZD-Fp-yYb"/>
                 <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
                 <outlet property="mailField" destination="h7a-R8-ptT" id="cX6-OQ-etL"/>
                 <outlet property="nameField" destination="WCc-1P-lpi" id="NBO-eM-rP5"/>
@@ -96,6 +97,9 @@
                                             <color key="tintColor" systemColor="labelColor"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
+                                            <connections>
+                                                <action selector="btnSignUp:" destination="-1" eventType="touchUpInside" id="hev-yA-FgQ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
