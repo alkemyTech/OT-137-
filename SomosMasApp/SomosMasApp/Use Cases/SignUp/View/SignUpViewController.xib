@@ -10,11 +10,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordError" destination="mvs-Gz-vTT" id="eNl-VN-p2N"/>
                 <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
-                <outlet property="createAccountButtom" destination="Ezg-0s-F1u" id="7fm-8l-hrB"/>
+                <outlet property="createAccountButton" destination="Ezg-0s-F1u" id="7fm-8l-hrB"/>
+                <outlet property="mailError" destination="fRR-fZ-yXD" id="oiU-VY-Nd1"/>
                 <outlet property="mailField" destination="h7a-R8-ptT" id="cX6-OQ-etL"/>
+                <outlet property="nameError" destination="wAJ-jW-GWW" id="0cW-uT-H8F"/>
                 <outlet property="nameField" destination="WCc-1P-lpi" id="NBO-eM-rP5"/>
+                <outlet property="passwordError" destination="sLT-4X-GHl" id="wD6-UA-1U0"/>
                 <outlet property="passwordField" destination="Aru-LW-Ygn" id="GjK-qe-r2Q"/>
+                <outlet property="phoneError" destination="oFm-l7-NiL" id="hRC-Mq-4Lv"/>
                 <outlet property="phoneField" destination="SSd-xa-30m" id="rj9-Gt-bBC"/>
                 <outlet property="stackScrollViewConstraint" destination="deO-Ov-Iht" id="cBC-6H-hed"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,15 +45,26 @@
                                         <constraint firstAttribute="height" constant="200" id="xyF-1z-qBj"/>
                                     </constraints>
                                 </imageView>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-Dv-SP5">
                                     <rect key="frame" x="20" y="220" width="286" height="45"/>
-                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="45" id="9iI-qR-wE2"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="9iI-qR-wE2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         Nombre incompleto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAJ-jW-GWW">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-R8-ptT" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                     <rect key="frame" x="20" y="285" width="286" height="45"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,6 +74,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         E-mail incorrecto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRR-fZ-yXD">
+                                    <rect key="frame" x="20" y="340" width="286" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-xa-30m" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                     <rect key="frame" x="20" y="350" width="286" height="45"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,6 +89,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         Teléfono invalido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-l7-NiL">
+                                    <rect key="frame" x="20" y="405" width="286" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aru-LW-Ygn" userLabel="Contraseña" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                     <rect key="frame" x="20" y="415" width="286" height="45"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,6 +104,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         Contraseña incorrecta:-Mínimo 8 caracteres- Incluir caracter numérico" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLT-4X-GHl">
+                                    <rect key="frame" x="20" y="470" width="286" height="0.0"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                    <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLS-6Q-ydh" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                     <rect key="frame" x="20" y="480" width="286" height="45"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,6 +119,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         Las contraseñas no coinciden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvs-Gz-vTT">
+                                    <rect key="frame" x="20" y="535" width="286" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-ib-L9V">
                                     <rect key="frame" x="20" y="545" width="286" height="150"/>
                                     <subviews>
@@ -111,23 +151,13 @@
                             </subviews>
                             <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
                         </stackView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53m-5h-d0b">
-                            <rect key="frame" x="0.0" y="0.0" width="326" height="0.0"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" id="dJN-aY-YET"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="2gs-oj-pHS"/>
                         <constraint firstItem="Cmv-Us-oue" firstAttribute="leading" secondItem="H3a-g4-cSg" secondAttribute="leading" id="63q-aB-t8h"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="6LD-xH-yCL"/>
                         <constraint firstAttribute="bottom" secondItem="Cmv-Us-oue" secondAttribute="bottom" constant="20" id="aic-SG-TzX"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="epp-NG-Vf0"/>
                         <constraint firstAttribute="trailing" secondItem="Cmv-Us-oue" secondAttribute="trailing" id="hiQ-39-2k7"/>
                         <constraint firstItem="Cmv-Us-oue" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="msO-NU-0Oz"/>
-                        <constraint firstAttribute="trailing" secondItem="53m-5h-d0b" secondAttribute="trailing" id="psf-0C-aRO"/>
-                        <constraint firstItem="53m-5h-d0b" firstAttribute="centerX" secondItem="H3a-g4-cSg" secondAttribute="centerX" id="wvj-GK-Lgo"/>
                     </constraints>
                 </scrollView>
             </subviews>

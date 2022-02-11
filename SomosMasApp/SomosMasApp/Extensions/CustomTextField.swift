@@ -13,6 +13,10 @@ class UnderlinedtextField: UITextField {
     
     let padding = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 5)
 
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
+            return bounds.inset(by: padding)
+        }
+    
     override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
@@ -43,39 +47,6 @@ class UnderlinedtextField: UITextField {
         super.setNeedsLayout()
         setupUnderline()
     }
-//
-//    override var intrinsicContentSize: CGSize {
-//        return CGSize(width: UIView.noIntrinsicMetric, height: 35.0)
-//    }
-    
-//    private func addPadding() {
-//
-//        rightViewMode = .always
-//        leftViewMode = .always
-//
-//        let paddingView = UIView(
-//            frame: CGRect(
-//                x: 0,
-//                y: 0,
-//                width: 12,
-//                height: 35
-//            )
-//        )
-//
-//        leftView = paddingView
-//        rightView = paddingView
-//    }
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        addPadding()
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//        addPadding()
-//    }
-    
 }
 
 

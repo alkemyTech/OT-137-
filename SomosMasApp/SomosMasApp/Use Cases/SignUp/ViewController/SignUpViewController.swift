@@ -19,7 +19,13 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordField: UnderlinedtextField!
     @IBOutlet weak var confirmPasswordField: UnderlinedtextField!
 
-    @IBOutlet weak var createAccountButtom: UIButton!
+    @IBOutlet weak var nameError: UILabel!
+    @IBOutlet weak var mailError: UILabel!
+    @IBOutlet weak var phoneError: UILabel!
+    @IBOutlet weak var passwordError: UILabel!
+    @IBOutlet weak var confirmPasswordError: UILabel!
+    
+    @IBOutlet weak var createAccountButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -29,35 +35,41 @@ class SignUpViewController: UIViewController {
         hideSignUpButton()
         setupTextBehavior()
         setupTextFields()
+        setupTextFieldDelegates()
     }
     
     func bindData() {
         signUpViewModel.isButtonSignUpShow.bind { [weak self] in
             $0 ? self?.showSignUpButton() : self?.hideSignUpButton()
         }
-        
     }
     
     func showSignUpButton() {
-        createAccountButtom.isEnabled = true
-        createAccountButtom.backgroundColor = .red
+        createAccountButton.isEnabled = true
+        createAccountButton.backgroundColor = .red
     }
 
     private func hideSignUpButton() {
-        createAccountButtom.isEnabled = false
-        createAccountButtom.backgroundColor = .clear
+        createAccountButton.isEnabled = false
+        createAccountButton.backgroundColor = .clear
     }
     
     func setupTextBehavior() {
+        nameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         mailField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        phoneField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        confirmPasswordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if let emailText = mailField.text, let passwordText = passwordField.text {
-            signUpViewModel.validateEmail(email: emailText, password: passwordText)
+        if let nameText = nameField.text,
+           let emailText = mailField.text,
+           let phoneText = phoneField.text,
+           let passwordText = passwordField.text,
+           let confirmPasswordText = confirmPasswordField.text {
+            signUpViewModel.validateAccount(user: nameText, email: emailText, phone: phoneText, password: passwordText, confirmPassword: confirmPasswordText)
         }
-        
         signUpViewModel.textFieldsInput()
     }
     
@@ -68,7 +80,6 @@ class SignUpViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         self.registerKeyboardNotifications()
-        setupTextFields()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,6 +91,15 @@ class SignUpViewController: UIViewController {
         super.viewWillTransition(to: size, with: coordinator)
         setupTextFields()
     }
+    
+    func setupTextFieldDelegates() {
+        nameField.delegate = self
+    }
+    
+    func setErrorLabelStatus(label: UILabel) {
+        label.isHidden.toggle()
+    }
+    
     
     func setupTextFields() {
         nameField.setupUnderline()
@@ -107,10 +127,8 @@ class SignUpViewController: UIViewController {
         txtField.leftView = leftImageView
         txtField.leftViewMode = .always
     }
-    
-    
-
 }
+
 
 extension SignUpViewController {
     func setUpDismissKeyboard() {
@@ -158,9 +176,16 @@ extension SignUpViewController {
             self.view.layoutIfNeeded()
         }
     }
-    
 }
 
-
-
+extension  SignUpViewController:  UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("Termino de editar")
+        if !(textField.text?.isValidUser ?? true) {
+            setErrorLabelStatus(label: nameError)
+        } else {
+            setErrorLabelStatus(label: nameError)
+        }
+    }
+}
 
