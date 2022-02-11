@@ -177,35 +177,19 @@ extension  SignUpViewController:  UITextFieldDelegate {
         
         switch textField {
         case self.nameField:
-            if !(textField.text?.isValidUser ?? true) {
-                nameError.isHidden = false
-            } else {
-                nameError.isHidden = true
-            }
+            nameError.isHidden = textField.text?.isValidUser ?? false
         case self.mailField:
-            if !(textField.text?.isValidEmail ?? true) {
-                mailError.isHidden = false
-            } else {
-                mailError.isHidden = true
-            }
+            mailError.isHidden = textField.text?.isValidEmail ?? false
         case self.phoneField:
-            if !(textField.text?.isValidPhone ?? true) {
-                phoneError.isHidden = false
-            } else {
-                phoneError.isHidden = true
-            }
+            phoneError.isHidden = textField.text?.isValidPhone ?? false
         case self.passwordField:
-            if !(textField.text?.isValidPassword ?? true) {
-                passwordError.isHidden = false
-            } else {
-                passwordError.isHidden = true
-            }
+            passwordError.isHidden = textField.text?.isValidPassword ?? false
         case self.confirmPasswordField:
             if !(signUpViewModel.isMatchPassword) {
                 confirmPasswordError.isHidden = false
             } else {
                 confirmPasswordError.isHidden = true
-            }        default:
+            } default:
             return
         }
     }
