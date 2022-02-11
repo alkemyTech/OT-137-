@@ -41,9 +41,13 @@ class LogInViewController: UIViewController {
     }
     
     //MARK: Button Action
-    @IBAction func loginButtonPressed(_ sender: Any) {
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
         loginViewModel.loginUser()
+        let homeVC = SignUpViewController(nibName: "HomeViewController", bundle: Bundle.main)
+        self.navigationController?.pushViewController(homeVC, animated: true)
     }
+    
+    
     
     @IBAction func createButtonPressed(_ sender: UIButton) {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: Bundle.main)
