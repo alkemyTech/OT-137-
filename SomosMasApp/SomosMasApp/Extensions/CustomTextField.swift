@@ -34,7 +34,7 @@ class UnderlinedtextField: UITextField {
         underline.frame = CGRect(
             x: 0,
             y: frame.size.height - lineWidth,
-            width:  UIScreen.main.bounds.width,
+            width: UIScreen.main.bounds.width,
             height: frame.size.height
         )
         underline.borderWidth = lineWidth

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class LoginViewModel {
     
@@ -16,6 +17,8 @@ class LoginViewModel {
             password = credentials.password
         }
     }
+    
+    
     
     private var email = ""
     private var password = ""
@@ -27,6 +30,22 @@ class LoginViewModel {
     func validateEmail(email: String, password: String) {
         isValidEmail = email.isValidEmail ? true : false
         isValidPassword = password.isValidPassword ? true : false
+        
+        if isValidEmail || isValidPassword {
+            self.email = email
+            self.password = password
+        }
+        
+    }
+    
+    
+    func loginUser() {
+        APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
+            //TODO: [OT137-76]
+        } failure: { error in
+            //TODO: [OT137-26]
+        }
+
     }
     
     func textFieldsInput() {

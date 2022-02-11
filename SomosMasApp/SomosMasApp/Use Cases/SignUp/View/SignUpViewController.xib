@@ -178,6 +178,7 @@
                         <constraint firstAttribute="bottom" secondItem="Cmv-Us-oue" secondAttribute="bottom" constant="20" id="aic-SG-TzX"/>
                         <constraint firstAttribute="trailing" secondItem="Cmv-Us-oue" secondAttribute="trailing" id="hiQ-39-2k7"/>
                         <constraint firstItem="Cmv-Us-oue" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="msO-NU-0Oz"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="xMd-4I-U3T"/>
                     </constraints>
                 </scrollView>
             </subviews>
