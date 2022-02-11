@@ -8,25 +8,21 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     var signUpViewModel = SignUpViewModel()
     
     @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var nameField: UnderlinedtextField!
     @IBOutlet weak var mailField: UnderlinedtextField!
     @IBOutlet weak var phoneField: UnderlinedtextField!
     @IBOutlet weak var passwordField: UnderlinedtextField!
     @IBOutlet weak var confirmPasswordField: UnderlinedtextField!
-
     @IBOutlet weak var nameError: UILabel!
     @IBOutlet weak var mailError: UILabel!
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var confirmPasswordError: UILabel!
-    
     @IBOutlet weak var createAccountButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +44,7 @@ class SignUpViewController: UIViewController {
         createAccountButton.isEnabled = true
         createAccountButton.backgroundColor = .red
     }
-
+    
     private func hideSignUpButton() {
         createAccountButton.isEnabled = false
         createAccountButton.backgroundColor = .clear
@@ -94,20 +90,20 @@ class SignUpViewController: UIViewController {
     
     func setupTextFieldDelegates() {
         nameField.delegate = self
+        mailField.delegate = self
+        phoneField.delegate = self
+        passwordField.delegate = self
+        confirmPasswordField.delegate = self
     }
-    
-    func setErrorLabelStatus(label: UILabel) {
-        label.isHidden.toggle()
-    }
-    
     
     func setupTextFields() {
+        self.passwordError.text = "        Contraseña incorrecta:\n                  - Mínimo 8 caracteres\n                  - Incluir caracter numérico"
+        
         nameField.setupUnderline()
         mailField.setupUnderline()
         phoneField.setupUnderline()
         passwordField.setupUnderline()
         confirmPasswordField.setupUnderline()
-
         
         let user = UIImage(systemName: "person")
         addLeftImage(txtField: nameField, andimage: user!)
@@ -129,18 +125,16 @@ class SignUpViewController: UIViewController {
     }
 }
 
-
 extension SignUpViewController {
     func setUpDismissKeyboard() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
 }
-
 
 extension SignUpViewController {
     
@@ -160,7 +154,7 @@ extension SignUpViewController {
         let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
         
         let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
-       
+        
         UIView.animate(withDuration: animationDuration) {
             self.stackScrollViewConstraint.constant = keyboardFrame.height
             self.view.layoutIfNeeded()
@@ -170,7 +164,7 @@ extension SignUpViewController {
     @objc private func keyboardWillHide(_ notification: Notification) {
         
         let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0
-       
+        
         UIView.animate(withDuration: animationDuration) {
             self.stackScrollViewConstraint.constant = 0
             self.view.layoutIfNeeded()
@@ -180,11 +174,39 @@ extension SignUpViewController {
 
 extension  SignUpViewController:  UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("Termino de editar")
-        if !(textField.text?.isValidUser ?? true) {
-            setErrorLabelStatus(label: nameError)
-        } else {
-            setErrorLabelStatus(label: nameError)
+        
+        switch textField {
+        case self.nameField:
+            if !(textField.text?.isValidUser ?? true) {
+                nameError.isHidden = false
+            } else {
+                nameError.isHidden = true
+            }
+        case self.mailField:
+            if !(textField.text?.isValidEmail ?? true) {
+                mailError.isHidden = false
+            } else {
+                mailError.isHidden = true
+            }
+        case self.phoneField:
+            if !(textField.text?.isValidPhone ?? true) {
+                phoneError.isHidden = false
+            } else {
+                phoneError.isHidden = true
+            }
+        case self.passwordField:
+            if !(textField.text?.isValidPassword ?? true) {
+                passwordError.isHidden = false
+            } else {
+                passwordError.isHidden = true
+            }
+        case self.confirmPasswordField:
+            if !(signUpViewModel.isMatchPassword) {
+                confirmPasswordError.isHidden = false
+            } else {
+                confirmPasswordError.isHidden = true
+            }        default:
+            return
         }
     }
 }

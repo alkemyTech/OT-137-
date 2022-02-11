@@ -20,7 +20,7 @@ class SignUpViewModel {
     private var isValidPhone = false
     private var isValidPassword = false
     private var isValidConfirmPassword = false
-    private var isMatchPassword = false
+    var isMatchPassword = false
     
     var isButtonSignUpShow: Observable<Bool> = Observable(false)
     
