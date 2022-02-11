@@ -42,7 +42,8 @@ class SignUpViewController: UIViewController {
     
     func showSignUpButton() {
         createAccountButton.isEnabled = true
-        createAccountButton.backgroundColor = .red
+        createAccountButton.backgroundColor = .lightGray
+        createAccountButton.layer.cornerRadius = 5
     }
     
     private func hideSignUpButton() {
