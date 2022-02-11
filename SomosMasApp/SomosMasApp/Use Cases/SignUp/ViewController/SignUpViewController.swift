@@ -70,7 +70,6 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -92,5 +92,6 @@ iOSInjectionProject/
 # Cocoapods
 Pods/
 
+# Archivo Podfile
 SomosMasApp/Podfile.lock
 .DS_Store
