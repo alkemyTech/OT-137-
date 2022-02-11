@@ -69,8 +69,8 @@
 		5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITests.swift; sourceTree = "<group>"; };
 		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = SomosMasApp/Service/Data/SignUpViewModel.swift; sourceTree = SOURCE_ROOT; };
-		5CDC880127B53F0C000743FE /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = SomosMasApp/Service/Data/SignUpModel.swift; sourceTree = SOURCE_ROOT; };
+		5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = "SomosMasApp/Use Cases/SignUp/ViewModel/SignUpViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		5CDC880127B53F0C000743FE /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = "SomosMasApp/Use Cases/SignUp/Model/SignUpModel.swift"; sourceTree = SOURCE_ROOT; };
 		8824C17E27A7705500914A57 /* CredentialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
 		8824C18127A770AE00914A57 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8824C18627A7738600914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +176,22 @@
 				5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */,
 			);
 			path = SomosMasAppUITests;
+			sourceTree = "<group>";
+		};
+		5CDF4B7127B5973F0086B76D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5CDF4B7227B597500086B76D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CDC880127B53F0C000743FE /* SignUpModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		861E0FC2397CB804A40BDC1C /* Frameworks */ = {
@@ -303,8 +319,8 @@
 		EAD69FB527A5E28D0015948E /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EAFBD19027AAF3FF00519749 /* ViewModel */,
-				EAFBD18F27AAF3F900519749 /* Model */,
+				5CDF4B7227B597500086B76D /* Model */,
+				5CDF4B7127B5973F0086B76D /* ViewModel */,
 				EAFBD18E27AAF32800519749 /* ViewController */,
 				EAFBD18D27AAF31D00519749 /* View */,
 			);
@@ -325,22 +341,6 @@
 				EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		EAFBD18F27AAF3F900519749 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5CDC880127B53F0C000743FE /* SignUpModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
