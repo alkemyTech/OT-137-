@@ -31,7 +31,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cja-39-wCD">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="1179"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-g4-cSg">
                     <rect key="frame" x="44" y="0.0" width="326" height="1200"/>
@@ -168,8 +168,8 @@
                 <constraint firstItem="cja-39-wCD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Cvr-qe-jl7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H3a-g4-cSg" secondAttribute="trailing" id="D9m-rW-HdJ"/>
                 <constraint firstItem="H3a-g4-cSg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dk4-Jf-MIh"/>
-                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QbI-de-5V8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QbI-de-5V8"/>
+                <constraint firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
                 <constraint firstAttribute="bottom" secondItem="H3a-g4-cSg" secondAttribute="bottom" id="deO-Ov-Iht" userLabel="anchorBottomScroll"/>
                 <constraint firstItem="cja-39-wCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iRH-XE-8lp"/>
                 <constraint firstItem="H3a-g4-cSg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rr5-Uk-Lec"/>
