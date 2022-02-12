@@ -29,6 +29,9 @@
 		8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8727B08A3000676D03 /* LoginDataResponse.swift */; };
 		8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8927B08C1100676D03 /* APIManager.swift */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
+		EA36806B27B7E3FA001A8757 /* AntoSignUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806A27B7E3FA001A8757 /* AntoSignUpTest.swift */; };
+		EA36806D27B7EB1F001A8757 /* SignUpModelAnto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806C27B7EB1F001A8757 /* SignUpModelAnto.swift */; };
+		EA36806F27B7F0B4001A8757 /* SignUpDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806E27B7F0B4001A8757 /* SignUpDataResponse.swift */; };
 		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
 		EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */; };
@@ -84,6 +87,9 @@
 		B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA36806A27B7E3FA001A8757 /* AntoSignUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntoSignUpTest.swift; sourceTree = "<group>"; };
+		EA36806C27B7EB1F001A8757 /* SignUpModelAnto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModelAnto.swift; sourceTree = "<group>"; };
+		EA36806E27B7F0B4001A8757 /* SignUpDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataResponse.swift; sourceTree = "<group>"; };
 		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
@@ -285,6 +291,7 @@
 			children = (
 				8878DB8427B0884100676D03 /* Data */,
 				8878DB8927B08C1100676D03 /* APIManager.swift */,
+				EA36806A27B7E3FA001A8757 /* AntoSignUpTest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -294,6 +301,7 @@
 			children = (
 				8878DB8527B0885900676D03 /* LoginUserResponse.swift */,
 				8878DB8727B08A3000676D03 /* LoginDataResponse.swift */,
+				EA36806E27B7F0B4001A8757 /* SignUpDataResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 		EAFBD18F27AAF3F900519749 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA36806C27B7EB1F001A8757 /* SignUpModelAnto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -595,16 +604,19 @@
 			files = (
 				8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */,
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
+				EA36806F27B7F0B4001A8757 /* SignUpDataResponse.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
+				EA36806B27B7E3FA001A8757 /* AntoSignUpTest.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				EA36806D27B7EB1F001A8757 /* SignUpModelAnto.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,

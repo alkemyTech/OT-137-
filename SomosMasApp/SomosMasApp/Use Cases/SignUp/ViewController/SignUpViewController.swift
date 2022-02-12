@@ -70,6 +70,24 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
+        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
+        self.signUpViewModel.signUp(userData: userData)
+        
+        // Segue to login
+        let logInVC = LogInViewController(nibName: "LogInViewController", bundle: Bundle.main)
+        self.navigationController?.pushViewController(logInVC, animated: true)
+        
+        
+        // Click animation
+        UIView.animate(withDuration: 0.6,
+            animations: {
+                self.createAccountButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            },
+            completion: { _ in
+                UIView.animate(withDuration: 0.6) {
+                    self.createAccountButton.transform = CGAffineTransform.identity
+                }
+            })
     }
     
     override func viewWillAppear(_ animated: Bool) {

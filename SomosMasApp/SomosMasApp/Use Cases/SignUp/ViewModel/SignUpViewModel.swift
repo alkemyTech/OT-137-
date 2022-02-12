@@ -10,6 +10,8 @@ import UIKit
 
 class SignUpViewModel {
     
+    let signUpWS = SignUpWS()
+    
     private var user = ""
     private var email = ""
     private var phone = ""
@@ -38,6 +40,14 @@ class SignUpViewModel {
             isButtonSignUpShow.value = true
         } else {
             isButtonSignUpShow.value = false
+        }
+    }
+    
+    func signUp(userData: SignUpModel){
+        self.signUpWS.registerUser(register: userData) { requestStatus in
+            print(requestStatus)
+        } onError: { errorData in
+            print(errorData)
         }
     }
 }
