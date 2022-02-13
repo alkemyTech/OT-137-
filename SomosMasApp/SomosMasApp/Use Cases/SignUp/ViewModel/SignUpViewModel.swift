@@ -43,11 +43,11 @@ class SignUpViewModel {
         }
     }
     
-    func signUp(userData: SignUpModel){
+    func signUp(userData: SignUpModel, completion: @escaping (Bool) -> ()) {
         self.signUpWS.registerUser(register: userData) { requestStatus in
-            print(requestStatus)
+            completion(true)
         } onError: { errorData in
-            print(errorData)
+            completion(false)
         }
     }
 }

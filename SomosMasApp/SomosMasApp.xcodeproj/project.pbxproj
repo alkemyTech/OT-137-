@@ -33,6 +33,7 @@
 		EA36806D27B7EB1F001A8757 /* SignUpModelAnto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806C27B7EB1F001A8757 /* SignUpModelAnto.swift */; };
 		EA36806F27B7F0B4001A8757 /* SignUpDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806E27B7F0B4001A8757 /* SignUpDataResponse.swift */; };
 		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
+		EA783F6927B92E8900241BA8 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA783F6827B92E8900241BA8 /* Modals.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
 		EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */; };
 		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
@@ -91,6 +92,7 @@
 		EA36806C27B7EB1F001A8757 /* SignUpModelAnto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModelAnto.swift; sourceTree = "<group>"; };
 		EA36806E27B7F0B4001A8757 /* SignUpDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataResponse.swift; sourceTree = "<group>"; };
 		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EA783F6827B92E8900241BA8 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				8824C18827A7811800914A57 /* Observable.swift */,
 				8878DB7F27B0858F00676D03 /* Constants.swift */,
+				EA783F6827B92E8900241BA8 /* Modals.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
+				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
 				EA36806B27B7E3FA001A8757 /* AntoSignUpTest.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,

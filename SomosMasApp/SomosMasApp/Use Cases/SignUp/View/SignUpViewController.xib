@@ -13,6 +13,7 @@
                 <outlet property="confirmPasswordError" destination="mvs-Gz-vTT" id="eNl-VN-p2N"/>
                 <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
                 <outlet property="createAccountButton" destination="Ezg-0s-F1u" id="7fm-8l-hrB"/>
+                <outlet property="mailAlreadyRegister" destination="5AJ-yP-O1d" id="y7S-Ez-6Za"/>
                 <outlet property="mailError" destination="fRR-fZ-yXD" id="oiU-VY-Nd1"/>
                 <outlet property="mailField" destination="h7a-R8-ptT" id="cX6-OQ-etL"/>
                 <outlet property="nameError" destination="wAJ-jW-GWW" id="0cW-uT-H8F"/>
@@ -78,6 +79,12 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        E-mail incorrecto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRR-fZ-yXD">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        E-mail ya registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AJ-yP-O1d">
                                             <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
