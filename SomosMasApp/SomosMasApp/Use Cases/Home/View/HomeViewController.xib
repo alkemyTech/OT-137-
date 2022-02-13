@@ -17,12 +17,26 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="house.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-lY-wr3">
+                    <rect key="frame" x="107" y="353.5" width="200" height="199"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2wa-si-49i"/>
+                        <constraint firstAttribute="height" constant="200" id="gpr-lR-ufu"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8Ut-lY-wr3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NMP-l4-Hod"/>
+                <constraint firstItem="8Ut-lY-wr3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wh5-kn-fuk"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="96"/>
         </view>
     </objects>
     <resources>
+        <image name="house.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
