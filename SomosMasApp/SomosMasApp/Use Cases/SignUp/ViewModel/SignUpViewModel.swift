@@ -10,7 +10,13 @@ import UIKit
 
 class SignUpViewModel {
     
-    let signUpWS = SignUpAPI()
+    struct DataModalError {
+        let titleModalError: String
+        let modalMessage: String
+        let titleButton: String
+    }
+    
+//    let signUpWS = SignUpAPI()
     
     private var user = ""
     private var email = ""
@@ -43,11 +49,17 @@ class SignUpViewModel {
         }
     }
     
-    func signUp(userData: SignUpModel, completion: @escaping (Bool) -> ()) {
-        self.signUpWS.registerUser(register: userData) { requestStatus in
-            completion(true)
-        } onError: { errorData in
-            completion(false)
-        }
+    func getTextError() -> DataModalError {
+        let titleModalError = "Error de registro"
+        let modalMessage = "Usuario ya registrado"
+        let titleButton = "Aceptar"
+        
+        let dataModalError = DataModalError(titleModalError: titleModalError, modalMessage: modalMessage, titleButton: titleButton)
+        return dataModalError
+    }
+    
+    func signUp(completion: @escaping (Bool) -> ()) {
+        completion(false)
+        //TODO: [OT137-23]
     }
 }

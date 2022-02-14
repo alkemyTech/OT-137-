@@ -113,11 +113,8 @@ class SignUpViewController: UIViewController {
     }
     
     func showErrorModal(){
-        let titleModalError = "Error de registro"
-        let modalMessage = "Usuario ya registrado"
-        let titleButton = "Aceptar"
-        
-        showAlertWithTitleRetry(title: titleModalError, message: modalMessage,titleButton: titleButton) {
+        let dataModalError = signUpViewModel.getTextError()
+        showAlertWithTitleRetry(title: dataModalError.titleModalError, message: dataModalError.modalMessage,titleButton: dataModalError.titleButton) {
             self.mailAlreadyRegister.isHidden = false
         }
     }
