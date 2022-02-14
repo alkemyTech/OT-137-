@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpViewModel {
     
-    let signUpWS = SignUpWS()
+    let signUpWS = SignUpAPI()
     
     private var user = ""
     private var email = ""
