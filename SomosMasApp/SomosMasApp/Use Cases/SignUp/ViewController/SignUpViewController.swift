@@ -10,6 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     var signUpViewModel = SignUpViewModel()
+    var mailCheckCache: String?
     
     @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var nameField: UnderlinedtextField!
@@ -22,6 +23,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var confirmPasswordError: UILabel!
+    @IBOutlet weak var mailAlreadyRegister: UILabel!
     @IBOutlet weak var createAccountButton: UIButton!
     
     override func viewDidLoad() {
@@ -32,6 +34,21 @@ class SignUpViewController: UIViewController {
         setupTextBehavior()
         setupTextFields()
         setupTextFieldDelegates()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        self.registerKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.unregisterKeyboardNotifications()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        setupTextFields()
     }
     
     func bindData() {
@@ -70,21 +87,36 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
+        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
+        self.mailCheckCache = mailField.text
+        self.signUpViewModel.signUp(userData: userData) { result in
+            result ? self.navigateToLogin() : self.showErrorModal()
+        }
+        buttonAnimation()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(false)
-        self.registerKeyboardNotifications()
+    func navigateToLogin(){
+        let logInVC = LogInViewController(nibName: "LogInViewController", bundle: Bundle.main)
+        self.navigationController?.pushViewController(logInVC, animated: true)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.unregisterKeyboardNotifications()
+    func buttonAnimation(){
+        UIView.animate(withDuration: 0.2,
+                       animations: {
+            self.createAccountButton.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        },
+                       completion: { _ in
+            UIView.animate(withDuration: 0.2) {
+                self.createAccountButton.transform = CGAffineTransform.identity
+            }
+        })
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        setupTextFields()
+    func showErrorModal(){
+        let dataModalError = signUpViewModel.getTextError()
+        showAlertWithTitleRetry(title: dataModalError.titleModalError, message: dataModalError.modalMessage,titleButton: dataModalError.titleButton) {
+            self.mailAlreadyRegister.isHidden = false
+        }
     }
     
     func setupTextFieldDelegates() {
@@ -179,6 +211,15 @@ extension  SignUpViewController:  UITextFieldDelegate {
             nameError.isHidden = textField.text?.isValidUser ?? false
         case self.mailField:
             mailError.isHidden = textField.text?.isValidEmail ?? false
+            guard let currentMail = textField.text else {return}
+            guard let cacheMail = mailCheckCache else {return}
+            
+            if currentMail == cacheMail {
+                mailAlreadyRegister.isHidden = false
+            } else {
+                mailAlreadyRegister.isHidden = true
+            }
+            
         case self.phoneField:
             phoneError.isHidden = textField.text?.isValidPhone ?? false
         case self.passwordField:
