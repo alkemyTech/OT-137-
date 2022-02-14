@@ -41,13 +41,21 @@ class LogInViewController: UIViewController {
     }
     
     //MARK: Button Action
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        loginViewModel.loginUser()
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        loginViewModel.loginUser { loginStatus in
+            loginStatus ? self.goToHome() : print("Modal Error")
+            //TODO: [OT137-26]
+        }
     }
     
     @IBAction func createButtonPressed(_ sender: UIButton) {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
+    func goToHome() {
+        let homeVC = HomeViewController()
+        self.navigationController?.pushViewController(homeVC, animated: true)
     }
     
     func bindData() {
