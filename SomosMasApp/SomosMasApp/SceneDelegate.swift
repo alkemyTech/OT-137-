@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
    // Variable de entorno y como consumirla
     let serverUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
-    
+    let userDefaults = UserDefaults.standard
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -28,10 +28,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
-        
+        // si está logueado mostrar el perfil del usuario
+        if getUserDefaultsLoggedUser()! {
+            
+        }
         
       
         
+    }
+    
+    func getUserDefaultsLoggedUser() -> Bool? {
+           guard let isLoggedUser = userDefaults.object(forKey: UserDefaultsKeys.LoggedUser) else { return false }
+           return isLoggedUser as? Bool
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

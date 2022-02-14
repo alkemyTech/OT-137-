@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */; };
+		1CB23D3C27BB1A550098BD76 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */; };
 		37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */; };
 		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
 		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomosMasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			children = (
 				8878DB8427B0884100676D03 /* Data */,
 				8878DB8927B08C1100676D03 /* APIManager.swift */,
+				1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				1CB23D3C27BB1A550098BD76 /* UserDefaultsManager.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,

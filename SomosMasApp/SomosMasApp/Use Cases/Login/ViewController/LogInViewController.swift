@@ -144,12 +144,9 @@ class LogInViewController: UIViewController {
         }()
     
     //UserDefaults
-    struct UserDefaultsKeys {
-        static let LoggedUser = "loggedUser"
-        static let LoginType = "LoginType"
-    }
     
-   
+    
+    
     
     
 }
