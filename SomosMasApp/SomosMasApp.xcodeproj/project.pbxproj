@@ -31,6 +31,7 @@
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 		EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806427B6BA44001A8757 /* HomeViewController.swift */; };
 		EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA36806527B6BA44001A8757 /* HomeViewController.xib */; };
+		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
 		EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */; };
 		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
@@ -87,6 +88,7 @@
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
 		EA36806427B6BA44001A8757 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA36806527B6BA44001A8757 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -329,10 +331,10 @@
 		EAD69FB527A5E28D0015948E /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EAFBD19027AAF3FF00519749 /* ViewModel */,
-				EAFBD18F27AAF3F900519749 /* Model */,
-				EAFBD18E27AAF32800519749 /* ViewController */,
 				EAFBD18D27AAF31D00519749 /* View */,
+				EAFBD18E27AAF32800519749 /* ViewController */,
+				EAFBD18F27AAF3F900519749 /* Model */,
+				EAFBD19027AAF3FF00519749 /* ViewModel */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -363,6 +365,7 @@
 		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EA73029D27B16643009C0263 /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
+				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,6 +817,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -842,6 +847,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
