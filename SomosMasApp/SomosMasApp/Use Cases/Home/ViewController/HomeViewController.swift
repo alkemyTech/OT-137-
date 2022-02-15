@@ -1,18 +1,21 @@
 //
-//  SignUpViewController.swift
+//  HomeViewController.swift
 //  SomosMasApp
 //
-//  Created by Santiago Caraballo on 02/02/2022.
+//  Created by Antonella Brini Vago on 11/02/2022.
 //
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        exit(0)
     }
 
 

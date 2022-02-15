@@ -9,14 +9,13 @@ import Foundation
 
 struct LoginDataResponse: Codable {
     
-    let user: [User]
+    let user: User
     let token: String
     
     enum CodingKeys: String, CodingKey {
         case user
         case token
     }
-    
 }
 
 struct User: Codable {
