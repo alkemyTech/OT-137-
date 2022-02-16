@@ -17,11 +17,11 @@ class APIManager {
         let url = Constants.URL.BASE_URL+Constants.URL.Endpoints.LOGIN
         let params: [String: String] = ["email": email, "password": password]
         
-        AF.request(url, method: .post, parameters: params,  encoder: JSONParameterEncoder.default).validate(statusCode: 200...299).responseDecodable(of: LoginDataResponse.self) {
+        AF.request(url, method: .post, parameters: params,  encoder: JSONParameterEncoder.default).validate(statusCode: 200...299).responseDecodable(of: LoginUserResponse.self) {
             response in
             
             
-            if let userResponse = response.value {
+            if let userResponse = response.value?.data {
                 sucess(userResponse)
             } else {
                 failure(response.error)

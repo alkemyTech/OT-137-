@@ -11,7 +11,6 @@
 		37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */; };
 		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
 		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
-		5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73327A1DD86008C15A5 /* ViewController.swift */; };
 		5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73827A1DD88008C15A5 /* Assets.xcassets */; };
 		5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */; };
 		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
@@ -31,6 +30,11 @@
 		8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8727B08A3000676D03 /* LoginDataResponse.swift */; };
 		8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8927B08C1100676D03 /* APIManager.swift */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
+		EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806427B6BA44001A8757 /* HomeViewController.swift */; };
+		EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA36806527B6BA44001A8757 /* HomeViewController.xib */; };
+		EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67BC8A27BC105200480505 /* SignUpModel.swift */; };
+		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
+		EA783F6927B92E8900241BA8 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA783F6827B92E8900241BA8 /* Modals.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
 		EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */; };
 		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
@@ -60,7 +64,6 @@
 		5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomosMasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C40E73327A1DD86008C15A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C40E73827A1DD88008C15A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C40E73B27A1DD88008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C40E73D27A1DD88008C15A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +90,11 @@
 		B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6670A8F6D2E1C1564757801 /* Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA36806427B6BA44001A8757 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA36806527B6BA44001A8757 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EA67BC8A27BC105200480505 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EA783F6827B92E8900241BA8 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -153,7 +161,6 @@
 				8824C17927A76DCC00914A57 /* Resources */,
 				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
 				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
-				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
 				5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */,
 				5C40E73D27A1DD88008C15A5 /* Info.plist */,
 			);
@@ -215,6 +222,7 @@
 		8824C17A27A76E4000914A57 /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				EA36806327B6BA32001A8757 /* Home */,
 				EAD69FB527A5E28D0015948E /* SignUp */,
 				8824C17B27A76E6800914A57 /* Login */,
 			);
@@ -269,6 +277,7 @@
 			children = (
 				8824C18827A7811800914A57 /* Observable.swift */,
 				8878DB7F27B0858F00676D03 /* Constants.swift */,
+				EA783F6827B92E8900241BA8 /* Modals.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -316,13 +325,44 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		EA36806327B6BA32001A8757 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA36806827B6BAC2001A8757 /* View */,
+				EA36806927B6BACA001A8757 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA36806827B6BAC2001A8757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA36806527B6BA44001A8757 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA36806927B6BACA001A8757 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA36806427B6BA44001A8757 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		EAD69FB527A5E28D0015948E /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				5CDF4B7227B597500086B76D /* Model */,
 				5CDF4B7127B5973F0086B76D /* ViewModel */,
 				EAFBD18E27AAF32800519749 /* ViewController */,
+=======
+>>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 				EAFBD18D27AAF31D00519749 /* View */,
+				EAFBD18E27AAF32800519749 /* ViewController */,
+				EAFBD18F27AAF3F900519749 /* Model */,
+				EAFBD19027AAF3FF00519749 /* ViewModel */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -343,6 +383,25 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		EAFBD18F27AAF3F900519749 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA67BC8A27BC105200480505 /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA73029D27B16643009C0263 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+>>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 		F06CA84BD7D1049AF297C98F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +526,7 @@
 			files = (
 				EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
+				EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
@@ -601,16 +661,22 @@
 				5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
-				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
+				EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
+				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
 				5CDC880227B53F0C000743FE /* SignUpModel.swift in Sources */,
+=======
+				EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */,
+>>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
+				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,6 +855,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -818,6 +885,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
