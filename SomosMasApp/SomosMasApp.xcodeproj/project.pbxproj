@@ -30,6 +30,7 @@
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 		EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806427B6BA44001A8757 /* HomeViewController.swift */; };
 		EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA36806527B6BA44001A8757 /* HomeViewController.xib */; };
+		EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67BC8A27BC105200480505 /* SignUpModel.swift */; };
 		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
 		EA783F6927B92E8900241BA8 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA783F6827B92E8900241BA8 /* Modals.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
@@ -87,6 +88,7 @@
 		E6750419B6023F345523CA75 /* Pods-SomosMasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.release.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.release.xcconfig"; sourceTree = "<group>"; };
 		EA36806427B6BA44001A8757 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA36806527B6BA44001A8757 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EA67BC8A27BC105200480505 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA783F6827B92E8900241BA8 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -629,6 +631,7 @@
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
