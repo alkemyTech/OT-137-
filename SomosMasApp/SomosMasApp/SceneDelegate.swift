@@ -28,18 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
-        // si está logueado mostrar el perfil del usuario
-        if getUserDefaultsLoggedUser()! {
-            
-        }
-        
       
         
-    }
-    
-    func getUserDefaultsLoggedUser() -> Bool? {
-           guard let isLoggedUser = userDefaults.object(forKey: UserDefaultsKeys.LoggedUser) else { return false }
-           return isLoggedUser as? Bool
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

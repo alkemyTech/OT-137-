@@ -24,6 +24,3 @@ struct Constants {
     
 }
 
-struct UserDefaultsKeys {
-    static let LoggedUser = "loggedUser"
-}

@@ -143,10 +143,4 @@ class LogInViewController: UIViewController {
             return view
         }()
     
-    //UserDefaults
-    
-    
-    
-    
-    
 }

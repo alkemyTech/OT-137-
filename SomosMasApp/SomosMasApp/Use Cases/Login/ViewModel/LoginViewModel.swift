@@ -41,8 +41,15 @@ class LoginViewModel {
     
     func loginUser(completion: @escaping (Bool) -> Void) {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
-            completion(true)
-            //TODO: [OT137-76]
+            let usuario = loginDataResponse.user
+            if let encodedUser = try? JSONEncoder().encode(usuario) {
+               UserDefaults.standard.set(encodedUser, forKey: "User")
+            }
+            if let decodedData = UserDefaults.standard.object(forKey: "User") as? Data {
+               if let user = try? JSONDecoder().decode(User.self, from: decodedData) {
+                print(user)
+              }
+            }
         } failure: { error in
             completion(false)
             //TODO: [OT137-26]

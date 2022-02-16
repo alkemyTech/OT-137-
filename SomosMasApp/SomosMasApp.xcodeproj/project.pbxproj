@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */; };
-		1CB23D3C27BB1A550098BD76 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */; };
 		37097AF8D0F03D017AD9943A /* Pods_SomosMasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */; };
 		5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */; };
 		5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */; };
-		5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E73327A1DD86008C15A5 /* ViewController.swift */; };
 		5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73827A1DD88008C15A5 /* Assets.xcassets */; };
 		5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */; };
 		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
@@ -59,12 +57,10 @@
 /* Begin PBXFileReference section */
 		092FBCC85C5885650734D3AA /* Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp-SomosMasAppUITests/Pods-SomosMasApp-SomosMasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C4ABE0127A2E61E00632EB5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		238B7E92031D9F7133598487 /* Pods-SomosMasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasApp.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasApp/Pods-SomosMasApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5C40E72C27A1DD86008C15A5 /* SomosMasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomosMasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C40E73327A1DD86008C15A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C40E73827A1DD88008C15A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C40E73B27A1DD88008C15A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C40E73D27A1DD88008C15A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,7 +155,6 @@
 				8824C17927A76DCC00914A57 /* Resources */,
 				5C40E72F27A1DD86008C15A5 /* AppDelegate.swift */,
 				5C40E73127A1DD86008C15A5 /* SceneDelegate.swift */,
-				5C40E73327A1DD86008C15A5 /* ViewController.swift */,
 				5C40E73A27A1DD88008C15A5 /* LaunchScreen.storyboard */,
 				5C40E73D27A1DD88008C15A5 /* Info.plist */,
 			);
@@ -295,7 +290,6 @@
 			children = (
 				8878DB8427B0884100676D03 /* Data */,
 				8878DB8927B08C1100676D03 /* APIManager.swift */,
-				1CB23D3B27BB1A550098BD76 /* UserDefaultsManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -339,7 +333,6 @@
 			children = (
 				EAFBD18D27AAF31D00519749 /* View */,
 				EAFBD18E27AAF32800519749 /* ViewController */,
-				EAFBD18F27AAF3F900519749 /* Model */,
 				EAFBD19027AAF3FF00519749 /* ViewModel */,
 			);
 			path = SignUp;
@@ -359,13 +352,6 @@
 				EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		EAFBD18F27AAF3F900519749 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		EAFBD19027AAF3FF00519749 /* ViewModel */ = {
@@ -634,7 +620,6 @@
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
-				5C40E73427A1DD86008C15A5 /* ViewController.swift in Sources */,
 				EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
@@ -644,7 +629,6 @@
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
-				1CB23D3C27BB1A550098BD76 /* UserDefaultsManager.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
