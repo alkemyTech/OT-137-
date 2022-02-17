@@ -16,7 +16,6 @@ struct LoginDataResponse: Codable {
         case user
         case token
     }
-    
 }
 
 struct User: Codable {
