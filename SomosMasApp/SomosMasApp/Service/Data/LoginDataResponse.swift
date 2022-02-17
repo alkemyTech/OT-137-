@@ -9,7 +9,7 @@ import Foundation
 
 struct LoginDataResponse: Codable {
     
-    let user: [User]
+    let user: User
     let token: String
     
     enum CodingKeys: String, CodingKey {
@@ -23,6 +23,12 @@ struct User: Codable {
     let id: Int
     let name: String
     let email: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case email
+    }
     
 }
 
