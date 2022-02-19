@@ -23,15 +23,17 @@ class MainTabBarController: UITabBarController {
     }
     
     private func setupViewControllers() {
-        let vc1 = UIViewController()
-        vc1.view.backgroundColor = UIColor.green
-        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        
+        let homeViewController = HomeViewController(nibName :"HomeViewController",bundle : nil)
+        homeViewController.title = "Home"
+        let navControllerHomeView = UINavigationController(rootViewController: homeViewController)
+        navControllerHomeView.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
 
         let vc2 = UIViewController()
         vc2.view.backgroundColor = UIColor.red
         vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
 
-        viewControllers = [vc1, vc2]
+        viewControllers = [navControllerHomeView, vc2]
     }
 
 }
