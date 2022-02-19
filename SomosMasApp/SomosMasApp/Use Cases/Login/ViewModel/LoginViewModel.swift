@@ -18,12 +18,14 @@ class LoginViewModel {
         }
     }
     
-    
+    let tabBarCoordinator = TabBarCoordinator()
     
     private var email = ""
     private var password = ""
     private var isValidEmail = false
     private var isValidPassword = false
+    
+    
     
     var isButtonLoginShow: Observable<Bool> = Observable(false)
     
@@ -43,6 +45,7 @@ class LoginViewModel {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
             completion(true)
             //TODO: [OT137-76]
+            self.tabBarCoordinator.start()
         } failure: { error in
             completion(false)
             //TODO: [OT137-26]
