@@ -87,9 +87,9 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
-        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
+//        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
         self.mailCheckCache = mailField.text
-        self.signUpViewModel.signUp(userData: userData) { result in
+        self.signUpViewModel.signUp() { result in
             result ? self.navigateToLogin() : self.showErrorModal()
         }
         buttonAnimation()
