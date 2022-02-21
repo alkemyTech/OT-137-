@@ -62,4 +62,5 @@ class SignUpViewModel {
         completion(false)
         //TODO: [OT137-23]
     }
+    
 }
