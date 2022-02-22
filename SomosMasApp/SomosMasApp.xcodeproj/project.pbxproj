@@ -27,6 +27,11 @@
 		8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8527B0885900676D03 /* LoginUserResponse.swift */; };
 		8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8727B08A3000676D03 /* LoginDataResponse.swift */; };
 		8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8927B08C1100676D03 /* APIManager.swift */; };
+		88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */; };
+		88943CB327BF25EF007FA7E1 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */; };
+		88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB727BF2683007FA7E1 /* Coordinators.swift */; };
+		88943CBA27BF38E5007FA7E1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */; };
+		889C74C227C0A0F700E4C7DF /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889C74C127C0A0F700E4C7DF /* HomeViewViewModel.swift */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 		EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806427B6BA44001A8757 /* HomeViewController.swift */; };
 		EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA36806527B6BA44001A8757 /* HomeViewController.xib */; };
@@ -80,6 +85,11 @@
 		8878DB8527B0885900676D03 /* LoginUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserResponse.swift; sourceTree = "<group>"; };
 		8878DB8727B08A3000676D03 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
 		8878DB8927B08C1100676D03 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		88943CB727BF2683007FA7E1 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		889C74C127C0A0F700E4C7DF /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +212,7 @@
 		8824C17A27A76E4000914A57 /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				88943CAF27BF25D1007FA7E1 /* MainTabBarController */,
 				EA36806327B6BA32001A8757 /* Home */,
 				EAD69FB527A5E28D0015948E /* SignUp */,
 				8824C17B27A76E6800914A57 /* Login */,
@@ -255,6 +266,7 @@
 		8824C18A27A7811C00914A57 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				88943CB627BF2672007FA7E1 /* Coordinators */,
 				8824C18827A7811800914A57 /* Observable.swift */,
 				8878DB7F27B0858F00676D03 /* Constants.swift */,
 				EA783F6827B92E8900241BA8 /* Modals.swift */,
@@ -305,11 +317,54 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		88943CAF27BF25D1007FA7E1 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB427BF260C007FA7E1 /* Controller */,
+				88943CB527BF261A007FA7E1 /* View */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		88943CB427BF260C007FA7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88943CB527BF261A007FA7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88943CB627BF2672007FA7E1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB727BF2683007FA7E1 /* Coordinators.swift */,
+				88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		889C74C327C0A0FC00E4C7DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				889C74C127C0A0F700E4C7DF /* HomeViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EA36806327B6BA32001A8757 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				EA36806827B6BAC2001A8757 /* View */,
 				EA36806927B6BACA001A8757 /* ViewController */,
+				889C74C327C0A0FC00E4C7DF /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -495,6 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88943CB327BF25EF007FA7E1 /* MainTabBarController.xib in Resources */,
 				EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */,
@@ -628,7 +684,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */,
+				889C74C227C0A0F700E4C7DF /* HomeViewViewModel.swift in Sources */,
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
+				88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */,
@@ -636,6 +694,7 @@
 				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,
+				88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
@@ -643,6 +702,7 @@
 				EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
+				88943CBA27BF38E5007FA7E1 /* TabBarCoordinator.swift in Sources */,
 				1C4ABE0327A2E61E00632EB5 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
