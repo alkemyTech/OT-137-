@@ -10,11 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
-<<<<<<< HEAD
-                <outlet property="btnSignUp" destination="Ezg-0s-F1u" id="jZD-Fp-yYb"/>
-=======
                 <outlet property="confirmPasswordError" destination="mvs-Gz-vTT" id="eNl-VN-p2N"/>
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
                 <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
                 <outlet property="createAccountButton" destination="Ezg-0s-F1u" id="7fm-8l-hrB"/>
                 <outlet property="mailAlreadyRegister" destination="5AJ-yP-O1d" id="y7S-Ez-6Za"/>
@@ -169,11 +165,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
                                             <connections>
-<<<<<<< HEAD
-                                                <action selector="btnSignUp:" destination="-1" eventType="touchUpInside" id="hev-yA-FgQ"/>
-=======
                                                 <action selector="createAccountAction:" destination="-1" eventType="touchUpInside" id="BGE-fJ-dtf"/>
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
                                             </connections>
                                         </button>
                                     </subviews>

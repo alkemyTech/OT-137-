@@ -18,10 +18,7 @@ struct Constants {
             
             static let LOGIN = "/login"
             static let REGISTER = "/register"
-<<<<<<< HEAD
-=======
             
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
         }
     }
     

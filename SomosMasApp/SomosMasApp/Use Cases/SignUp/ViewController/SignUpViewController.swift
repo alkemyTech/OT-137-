@@ -8,13 +8,6 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-<<<<<<< HEAD
-    
-    var signUPViewModel = SignUpViewModel()
-    
-    @IBOutlet weak var stackScrollViewConstraint: NSLayoutConstraint!
-=======
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
     
     var signUpViewModel = SignUpViewModel()
     var mailCheckCache: String?
@@ -25,9 +18,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneField: UnderlinedtextField!
     @IBOutlet weak var passwordField: UnderlinedtextField!
     @IBOutlet weak var confirmPasswordField: UnderlinedtextField!
-<<<<<<< HEAD
-    @IBOutlet weak var btnSignUp: UIButton!
-=======
     @IBOutlet weak var nameError: UILabel!
     @IBOutlet weak var mailError: UILabel!
     @IBOutlet weak var phoneError: UILabel!
@@ -35,7 +25,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPasswordError: UILabel!
     @IBOutlet weak var mailAlreadyRegister: UILabel!
     @IBOutlet weak var createAccountButton: UIButton!
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,12 +51,6 @@ class SignUpViewController: UIViewController {
         setupTextFields()
     }
     
-<<<<<<< HEAD
-   
-   
-    
-    func setupTextFields() {
-=======
     func bindData() {
         signUpViewModel.isButtonSignUpShow.bind { [weak self] in
             $0 ? self?.showSignUpButton() : self?.hideSignUpButton()
@@ -104,13 +87,13 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
-//        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
-        self.mailCheckCache = mailField.text
-        self.signUpViewModel.signUp() { result in
-            result ? self.navigateToLogin() : self.showErrorModal()
+            let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
+            self.mailCheckCache = mailField.text
+            self.signUpViewModel.signUp(userData: userData) { result in
+                result ? self.showSuccesModal() : self.navigateToLogin()
+            }
+            buttonAnimation()
         }
-        buttonAnimation()
-    }
     
     func navigateToLogin(){
         let logInVC = LogInViewController(nibName: "LogInViewController", bundle: Bundle.main)
@@ -135,6 +118,12 @@ class SignUpViewController: UIViewController {
             self.mailAlreadyRegister.isHidden = false
         }
     }
+    func showSuccesModal(){
+        let dataModalSucces = signUpViewModel.getTextSucces()
+        showAlertWithTitleRetry(title: dataModalSucces.titleModalSucces, message: dataModalSucces.modalMessage, titleButton: dataModalSucces.titleButton){
+            self.navigateToLogin()
+            }
+    }
     
     func setupTextFieldDelegates() {
         nameField.delegate = self
@@ -146,7 +135,6 @@ class SignUpViewController: UIViewController {
     
     func setupTextFields() {
         self.passwordError.text = "        Contraseña incorrecta:\n                  - Mínimo 8 caracteres\n                  - Incluir caracter numérico"
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
         
         nameField.setupUnderline()
         mailField.setupUnderline()
@@ -172,34 +160,6 @@ class SignUpViewController: UIViewController {
         txtField.leftView = leftImageView
         txtField.leftViewMode = .always
     }
-<<<<<<< HEAD
-
-    @IBAction func btnSignUp(_ sender: UIButton) {
-        
-        guard let name = self.nameField.text else { return }
-        guard let email = self.mailField.text else { return }
-        guard let password = self.passwordField.text else { return }
-        
-        signUPViewModel.SignUp(name: name, email: email, password: password)
-        showAlert()
-        }
-    }
-extension SignUpViewController{
-    
-    func showAlert(){
-        
-        let showAlert = UIAlertController(title: "Succes", message: "User was succesfully register", preferredStyle: .alert)
-        
-        showAlert.addAction(UIAlertAction(title: "Accept", style: .cancel, handler: { action in
-            
-            _ = self.navigationController?.popViewController(animated: true)
-        }))
-        
-        present (showAlert, animated: true)
-        
-    }
-=======
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 }
 
 extension SignUpViewController {
@@ -212,10 +172,6 @@ extension SignUpViewController {
         view.endEditing(true)
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 extension SignUpViewController {
     
     private func registerKeyboardNotifications() {

@@ -2,46 +2,11 @@
 //  SignUpViewModel.swift
 //  SomosMasApp
 //
-<<<<<<< HEAD
-//  Created by Mariano Uriel Delgado on 10/02/2022.
-=======
 //  Created by Antonella Brini Vago on 07/02/2022.
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
 //
 
 import Foundation
 import UIKit
-<<<<<<< HEAD
-import Alamofire
-
-class SignUpViewModel {
-    
-   
-    
-    //var signUpViewController = SignUpViewController()
-    
-     func SignUp(name: String, email: String, password: String) {
-            let signUp = SignUpModel(name: name, email: email, password: password)
-            APIManager.shared.registerUser(register: signUp)
-            { (isSuccess) in
-                if isSuccess{
-                    
-                    
-                }else{
-                   
-                }
-                
-            }
-    }
-    
-    
-    
-  
-    
-    
-    
-    
-=======
 
 class SignUpViewModel {
     
@@ -49,9 +14,16 @@ class SignUpViewModel {
         let titleModalError: String
         let modalMessage: String
         let titleButton: String
+        
     }
     
-//    let signUpWS = SignUpAPI()
+    struct DataModalSucces {
+        let titleModalSucces: String
+        let modalMessage: String
+        let titleButton: String
+    }
+    
+    let signUpWS = SignUpAPI()
     
     private var user = ""
     private var email = ""
@@ -93,9 +65,23 @@ class SignUpViewModel {
         return dataModalError
     }
     
-    func signUp(completion: @escaping (Bool) -> ()) {
-        completion(false)
-        //TODO: [OT137-23]
+    func signUp(userData: SignUpModel, completion: @escaping (Bool) -> ()) {
+            self.signUpWS.registerUser(register: userData) { requestStatus in
+                completion(true)
+            } onError: { errorData in
+                completion(false)
+            }
     }
->>>>>>> 7e479f9be2795b20433cb67edf5eec61537b8af4
+    
+    func getTextSucces()-> DataModalSucces {
+        
+        let titleModalSucces = "Succes"
+        let modalMessage = "User was succesfully register"
+        let titleButton = "Aceptar"
+        
+        let  dataModalSucces = DataModalSucces(titleModalSucces: titleModalSucces, modalMessage: modalMessage, titleButton: titleButton)
+        
+        return dataModalSucces
+        
+    }
 }
