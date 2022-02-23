@@ -18,8 +18,6 @@ class LoginViewModel {
         }
     }
     
-    let tabBarCoordinator = TabBarCoordinator()
-    
     private var email = ""
     private var password = ""
     private var isValidEmail = false
@@ -44,11 +42,8 @@ class LoginViewModel {
     func loginUser(completion: @escaping (Bool) -> Void) {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
             completion(true)
-            //TODO: [OT137-76]
-            self.tabBarCoordinator.start()
         } failure: { error in
             completion(false)
-            //TODO: [OT137-26]
         }
 
     }
@@ -60,5 +55,6 @@ class LoginViewModel {
             isButtonLoginShow.value = false
         }
     }
+    
     
 }

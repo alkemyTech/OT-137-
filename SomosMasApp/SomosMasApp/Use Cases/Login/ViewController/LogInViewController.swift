@@ -25,6 +25,7 @@ class LogInViewController: UIViewController {
         return imageView
     }()
     
+    let tabBarCoordinator = TabBarCoordinator()
     
     
     override func viewDidLoad() {
@@ -43,7 +44,7 @@ class LogInViewController: UIViewController {
     //MARK: Button Action
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         loginViewModel.loginUser { loginStatus in
-            loginStatus ? self.goToHome() : print("Modal Error")
+            loginStatus ? self.goToHome() : self.showModal()
             //TODO: [OT137-26]
         }
     }
@@ -54,8 +55,13 @@ class LogInViewController: UIViewController {
     }
     
     func goToHome() {
-        let homeVC = HomeViewController()
-        self.navigationController?.pushViewController(homeVC, animated: true)
+        self.tabBarCoordinator.start()
+    }
+    
+    func showModal() {
+    showAlertWithTitleRetry(title: "Error de autenticación", message: "Error a la hora de autenticar",titleButton: "Aceptar") {
+        self.loginButton.isEnabled = false
+        }
     }
     
     func bindData() {
