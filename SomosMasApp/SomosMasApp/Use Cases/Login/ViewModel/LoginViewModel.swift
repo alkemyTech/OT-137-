@@ -18,12 +18,14 @@ class LoginViewModel {
         }
     }
     
-    
+    let tabBarCoordinator = TabBarCoordinator()
     
     private var email = ""
     private var password = ""
     private var isValidEmail = false
     private var isValidPassword = false
+    
+    
     
     var isButtonLoginShow: Observable<Bool> = Observable(false)
     
