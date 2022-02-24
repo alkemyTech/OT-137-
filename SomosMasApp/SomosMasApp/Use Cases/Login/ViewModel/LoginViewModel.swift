@@ -45,7 +45,6 @@ class LoginViewModel {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
             completion(true)
             //TODO: [OT137-76]
-            self.tabBarCoordinator.start()
         } failure: { error in
             completion(false)
             //TODO: [OT137-26]

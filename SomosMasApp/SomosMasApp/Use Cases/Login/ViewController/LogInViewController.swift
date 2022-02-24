@@ -25,7 +25,7 @@ class LogInViewController: UIViewController {
         return imageView
     }()
     
-    
+    let tabCoordinator = TabBarCoordinator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class LogInViewController: UIViewController {
     //MARK: Button Action
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         loginViewModel.loginUser { loginStatus in
-            loginStatus ? self.goToHome() : print("Modal Error")
+            loginStatus ? self.goToMainTabBar() : print("Modal Error")
             //TODO: [OT137-26]
         }
     }
@@ -53,9 +53,9 @@ class LogInViewController: UIViewController {
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
-    func goToHome() {
-        let homeVC = HomeViewController()
-        self.navigationController?.pushViewController(homeVC, animated: true)
+    func goToMainTabBar() {
+        let mainTab = tabCoordinator.start()
+        setRootViewController(viewController: mainTab)
     }
     
     func bindData() {
