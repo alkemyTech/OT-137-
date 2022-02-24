@@ -9,15 +9,9 @@ import Foundation
 import UIKit
 
 class TabBarCoordinator: Coordinator {
-    
-    func start() {
+    func start() -> UIViewController {
         let mainTabBar = MainTabBarController()
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScene = scenes.first as? UIWindowScene
-        let window = windowScene?.windows.first
-        window?.rootViewController = mainTabBar
-        window?.makeKeyAndVisible()
+        return mainTabBar
     }
-    
     
 }
