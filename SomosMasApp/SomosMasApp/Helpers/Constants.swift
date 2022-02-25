@@ -11,7 +11,7 @@ struct Constants {
     
     struct URL {
         
-        static let BASE_URL = "http://ongapi.alkemy.org/api"
+        static let BASE_URL = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
         
         
         struct Endpoints {
