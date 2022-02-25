@@ -13,7 +13,7 @@ class NewsAPI {
     typealias completionHandler = (_ requestStatus: NewsDataResponse) -> Void
     typealias errorHandler = (_ errorData: String) -> Void
 
-    let baseUrl = Constants.URL.BASE_URL
+    let baseUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
     let endPoint = Constants.URL.Endpoints.NEWS
 
     func getNews(onSuccess: @escaping completionHandler, onError: @escaping errorHandler){

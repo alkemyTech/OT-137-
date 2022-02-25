@@ -9,12 +9,25 @@ import Foundation
 
 class HomeViewModel {
     let newsAPI = NewsAPI()
+    var newsData: [News] = []{
+        didSet {
+            self.bindRequestData(newsData)
+        }
+    }
     
-    func getNews(onSuccess: @escaping ([News]) -> (), onError: @escaping (String) -> ()) {
+    var bindStartRequest = {() -> Void in }
+    var bindEndRequest = {() -> Void in }
+    var bindErrorMessage = {(_ errorMessage: String) -> Void in }
+    var bindRequestData = {(_ arrayNews: [News]) -> Void in }
+    
+    func getNews() {
+        bindStartRequest()
         newsAPI.getNews { requestStatus in
-            onSuccess(requestStatus.data)
+            self.bindEndRequest()
+            self.newsData = requestStatus.data
         } onError: { errorData in
-            onError(errorData.debugDescription)
+            self.bindEndRequest()
+            self.bindErrorMessage(errorData.debugDescription)
         }
     }
 }

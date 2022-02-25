@@ -9,24 +9,36 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var newsData: [News] = []
     var homeViewModel = HomeViewModel()
+    var newsArray = [News]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchNews()
+        self.setBinds()
+        self.homeViewModel.getNews()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         exit(0)
     }
     
-    func fetchNews() {
-        homeViewModel.getNews(onSuccess: { newsData in
-            self.newsData = newsData
-            print(self.newsData.prefix(5))
-        }) { error in
-            print(error.debugDescription)
+    func setBinds() {
+        self.homeViewModel.bindStartRequest = {() -> Void in
+            print("Inicia la consulta")
+        }
+        
+        self.homeViewModel.bindRequestData = {(_ arrayNews: [News]) -> Void in
+            let prefix = arrayNews.prefix(5)
+            self.newsArray = Array(prefix)
+            print(self.newsArray)
+        }
+        
+        self.homeViewModel.bindErrorMessage = {(_ errorMessage: String) -> Void in
+            print(errorMessage)
+        }
+        
+        self.homeViewModel.bindEndRequest = {() -> Void in
+            print("Termina la consulta")
         }
     }
 }
