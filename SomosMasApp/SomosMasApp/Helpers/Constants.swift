@@ -13,13 +13,11 @@ struct Constants {
         
         static let BASE_URL = "http://ongapi.alkemy.org/api"
         
-        
         struct Endpoints {
             
             static let LOGIN = "/login"
             static let REGISTER = "/register"
-            
+            static let NEWS = "/news"
         }
     }
-    
 }
