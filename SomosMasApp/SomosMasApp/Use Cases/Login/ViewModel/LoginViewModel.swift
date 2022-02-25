@@ -18,12 +18,12 @@ class LoginViewModel {
         }
     }
     
-    
-    
     private var email = ""
     private var password = ""
     private var isValidEmail = false
     private var isValidPassword = false
+    
+    
     
     var isButtonLoginShow: Observable<Bool> = Observable(false)
     
@@ -42,10 +42,8 @@ class LoginViewModel {
     func loginUser(completion: @escaping (Bool) -> Void) {
         APIManager.shared.loginUser(email: email, password: password) { loginDataResponse in
             completion(true)
-            //TODO: [OT137-76]
         } failure: { error in
             completion(false)
-            //TODO: [OT137-26]
         }
 
     }
@@ -57,5 +55,6 @@ class LoginViewModel {
             isButtonLoginShow.value = false
         }
     }
+    
     
 }

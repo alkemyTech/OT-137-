@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     var homeViewModel = HomeViewModel()
     var newsArray = [News]()
     
+    @IBOutlet weak var collectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBinds()
