@@ -65,7 +65,8 @@ class SignUpViewModel {
         return dataModalError
     }
     
-    func signUp(userData: SignUpModel, completion: @escaping (Bool) -> ()) {
+    func signUp(name: String, email: String, password: String, completion: @escaping (Bool) -> ()) {
+            let userData = SignUpModel(name: name, email: email, password: password)
             self.signUpWS.registerUser(register: userData) { requestStatus in
                 completion(true)
             } onError: { errorData in
