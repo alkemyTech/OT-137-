@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="SomosMasApp" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="DuK-1b-7yI" id="9cw-g4-rLd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,29 +18,25 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-1b-7yI">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8oO-ea-b6I">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="house.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-lY-wr3">
+                    <rect key="frame" x="107" y="353.5" width="200" height="199"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2wa-si-49i"/>
+                        <constraint firstAttribute="height" constant="200" id="gpr-lR-ufu"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="DuK-1b-7yI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zlf-jB-rfo"/>
-                <constraint firstItem="DuK-1b-7yI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eTi-fC-ZXt"/>
-                <constraint firstItem="DuK-1b-7yI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fJd-Jy-0tW"/>
-                <constraint firstItem="DuK-1b-7yI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lla-ch-7W2"/>
+                <constraint firstItem="8Ut-lY-wr3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NMP-l4-Hod"/>
+                <constraint firstItem="8Ut-lY-wr3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wh5-kn-fuk"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+            <point key="canvasLocation" x="139" y="96"/>
         </view>
     </objects>
     <resources>
+        <image name="house.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
