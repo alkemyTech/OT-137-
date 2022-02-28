@@ -85,4 +85,5 @@ class SignUpViewModel {
         return dataModalSucces
         
     }
+    
 }
