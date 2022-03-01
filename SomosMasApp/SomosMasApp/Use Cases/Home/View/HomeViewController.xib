@@ -33,7 +33,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                                <constraint firstItem="DuK-1b-7yI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zlf-jB-rfo"/>
+                <constraint firstItem="DuK-1b-7yI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zlf-jB-rfo"/>
                 <constraint firstItem="DuK-1b-7yI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eTi-fC-ZXt"/>
                 <constraint firstItem="DuK-1b-7yI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fJd-Jy-0tW"/>
                 <constraint firstItem="DuK-1b-7yI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lla-ch-7W2"/>
