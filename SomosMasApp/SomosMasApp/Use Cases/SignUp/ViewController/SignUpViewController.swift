@@ -87,13 +87,12 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountAction(_ sender: Any) {
-//        let userData = SignUpModel(name: nameField.text!, email: mailField.text!, password: passwordField.text!)
-        self.mailCheckCache = mailField.text
-        self.signUpViewModel.signUp() { result in
-            result ? self.navigateToLogin() : self.showErrorModal()
+            self.mailCheckCache = mailField.text
+        self.signUpViewModel.signUp(name: nameField.text ?? "", email: mailField.text ?? "", password: passwordField.text ?? "") { result in
+            result ? self.showSuccesModal() : self.showErrorModal()
         }
-        buttonAnimation()
-    }
+            buttonAnimation()
+        }
     
     func navigateToLogin(){
         let logInVC = LogInViewController(nibName: "LogInViewController", bundle: Bundle.main)
@@ -117,6 +116,12 @@ class SignUpViewController: UIViewController {
         showAlertWithTitleRetry(title: dataModalError.titleModalError, message: dataModalError.modalMessage,titleButton: dataModalError.titleButton) {
             self.mailAlreadyRegister.isHidden = false
         }
+    }
+    func showSuccesModal(){
+        let dataModalSucces = signUpViewModel.getTextSucces()
+        showAlertWithTitleRetry(title: dataModalSucces.titleModalSucces, message: dataModalSucces.modalMessage, titleButton: dataModalSucces.titleButton){
+            self.navigateToLogin()
+            }
     }
     
     func setupTextFieldDelegates() {
@@ -166,7 +171,6 @@ extension SignUpViewController {
         view.endEditing(true)
     }
 }
-
 extension SignUpViewController {
     
     private func registerKeyboardNotifications() {

@@ -11,14 +11,14 @@ import Alamofire
 class APIManager {
     
     static let shared = APIManager()
+
     
     func loginUser(email: String, password: String,  sucess: @escaping (_ loginDataResponse: LoginUserResponse) -> (), failure: @escaping ( _ error: Error?) -> () ) {
-        
+
+        let url = Constants.URL.BASE_URL+Constants.URL.Endpoints.LOGIN
         let params: [String: String] = ["email": email, "password": password]
-        let serverUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
-        let finalUrl = serverUrl + "login"
         
-        AF.request(finalUrl, method: .post, parameters: params,  encoder: JSONParameterEncoder.default).validate(statusCode: 200...299).responseDecodable(of: LoginUserResponse.self) {
+        AF.request(url, method: .post, parameters: params,  encoder: JSONParameterEncoder.default).validate(statusCode: 200...299).responseDecodable(of: LoginUserResponse.self) {
             response in
             if let userResponse = response.value {
                 sucess(userResponse)
@@ -28,6 +28,6 @@ class APIManager {
         }
         
     }
-        
-    
 }
+
+
