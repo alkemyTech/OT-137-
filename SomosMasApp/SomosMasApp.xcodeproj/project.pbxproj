@@ -31,10 +31,10 @@
 		8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8727B08A3000676D03 /* LoginDataResponse.swift */; };
 		8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8927B08C1100676D03 /* APIManager.swift */; };
 		88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */; };
- 		88943CB327BF25EF007FA7E1 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */; };
- 		88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB727BF2683007FA7E1 /* Coordinators.swift */; };
- 		88943CBA27BF38E5007FA7E1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */; };
- 		88A4090C27C721C4006AF2EB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4090B27C721C4006AF2EB /* UIViewController+Extensions.swift */; };
+		88943CB327BF25EF007FA7E1 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */; };
+		88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB727BF2683007FA7E1 /* Coordinators.swift */; };
+		88943CBA27BF38E5007FA7E1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */; };
+		88A4090C27C721C4006AF2EB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4090B27C721C4006AF2EB /* UIViewController+Extensions.swift */; };
 		A4355273884ADC38538CA422 /* Pods_SomosMasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B659DD8652075483DEEAFD1A /* Pods_SomosMasAppTests.framework */; };
 		EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36806427B6BA44001A8757 /* HomeViewController.swift */; };
 		EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA36806527B6BA44001A8757 /* HomeViewController.xib */; };
@@ -44,9 +44,9 @@
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
 		EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */; };
 		EAD2C2DD27C432440024B8B3 /* NewsDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2DC27C432440024B8B3 /* NewsDataResponse.swift */; };
- 		EAD2C2DF27C433C50024B8B3 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2DE27C433C50024B8B3 /* NewsAPI.swift */; };
- 		EAD2C2E227C438750024B8B3 /* NewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2E127C438750024B8B3 /* NewsTest.swift */; };
- 		EAD2C2E527C439520024B8B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */; };
+		EAD2C2DF27C433C50024B8B3 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2DE27C433C50024B8B3 /* NewsAPI.swift */; };
+		EAD2C2E227C438750024B8B3 /* NewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2E127C438750024B8B3 /* NewsTest.swift */; };
+		EAD2C2E527C439520024B8B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */; };
 		EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD69FB727A5E3E60015948E /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,10 +96,10 @@
 		8878DB8727B08A3000676D03 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
 		8878DB8927B08C1100676D03 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
- 		88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
- 		88943CB727BF2683007FA7E1 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
- 		88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
- 		88A4090B27C721C4006AF2EB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		88943CB727BF2683007FA7E1 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		88A4090B27C721C4006AF2EB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		8FDC5377E8A1BC3F6EFB7C7F /* Pods-SomosMasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.release.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp_SomosMasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59C0612A495EA76950407F8 /* Pods_SomosMasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SomosMasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,9 +114,9 @@
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA941AF927AD4DF3004BD17B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		EAD2C2DC27C432440024B8B3 /* NewsDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataResponse.swift; sourceTree = "<group>"; };
- 		EAD2C2DE27C433C50024B8B3 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
- 		EAD2C2E127C438750024B8B3 /* NewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTest.swift; sourceTree = "<group>"; };
- 		EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EAD2C2DE27C433C50024B8B3 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		EAD2C2E127C438750024B8B3 /* NewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTest.swift; sourceTree = "<group>"; };
+		EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EAD69FB727A5E3E60015948E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FD863578829D1E0913856972 /* Pods-SomosMasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomosMasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SomosMasAppTests/Pods-SomosMasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,39 +347,39 @@
 			sourceTree = "<group>";
 		};
 		88943CAF27BF25D1007FA7E1 /* MainTabBarController */ = {
- 			isa = PBXGroup;
- 			children = (
- 				88943CB427BF260C007FA7E1 /* Controller */,
- 				88943CB527BF261A007FA7E1 /* View */,
- 			);
- 			path = MainTabBarController;
- 			sourceTree = "<group>";
- 		};
- 		88943CB427BF260C007FA7E1 /* Controller */ = {
- 			isa = PBXGroup;
- 			children = (
- 				88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */,
- 			);
- 			path = Controller;
- 			sourceTree = "<group>";
- 		};
- 		88943CB527BF261A007FA7E1 /* View */ = {
- 			isa = PBXGroup;
- 			children = (
- 				88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */,
- 			);
- 			path = View;
- 			sourceTree = "<group>";
- 		};
- 		88943CB627BF2672007FA7E1 /* Coordinators */ = {
- 			isa = PBXGroup;
- 			children = (
- 				88943CB727BF2683007FA7E1 /* Coordinators.swift */,
- 				88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */,
- 			);
- 			path = Coordinators;
- 			sourceTree = "<group>";
- 		};
+			isa = PBXGroup;
+			children = (
+				88943CB427BF260C007FA7E1 /* Controller */,
+				88943CB527BF261A007FA7E1 /* View */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		88943CB427BF260C007FA7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB027BF25EF007FA7E1 /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88943CB527BF261A007FA7E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB127BF25EF007FA7E1 /* MainTabBarController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88943CB627BF2672007FA7E1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				88943CB727BF2683007FA7E1 /* Coordinators.swift */,
+				88943CB927BF38E5007FA7E1 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		EA36806327B6BA32001A8757 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,21 +407,21 @@
 			sourceTree = "<group>";
 		};
 		EAD2C2E027C438390024B8B3 /* News */ = {
- 			isa = PBXGroup;
- 			children = (
- 				EAD2C2E127C438750024B8B3 /* NewsTest.swift */,
- 			);
- 			path = News;
- 			sourceTree = "<group>";
- 		};
- 		EAD2C2E327C439360024B8B3 /* ViewModel */ = {
- 			isa = PBXGroup;
- 			children = (
- 				EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */,
- 			);
- 			path = ViewModel;
- 			sourceTree = "<group>";
- 		};
+			isa = PBXGroup;
+			children = (
+				EAD2C2E127C438750024B8B3 /* NewsTest.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		EAD2C2E327C439360024B8B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C2E427C439520024B8B3 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EAD69FB527A5E28D0015948E /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,13 +722,15 @@
 			files = (
 				8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */,
 				EAD2C2E527C439520024B8B3 /* HomeViewModel.swift in Sources */,
- 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
- 				EAD2C2DD27C432440024B8B3 /* NewsDataResponse.swift in Sources */,
+				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
+				EAD2C2DD27C432440024B8B3 /* NewsDataResponse.swift in Sources */,
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
 				5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */,
 				88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
+				EAD2C2DF27C433C50024B8B3 /* NewsAPI.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
+				88A4090C27C721C4006AF2EB /* UIViewController+Extensions.swift in Sources */,
 				EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
@@ -934,7 +936,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SERVER_URL = "http://ongapi.alkemy.org/api/";
+				SERVER_URL = "http://ongapi.alkemy.org/api";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -964,7 +966,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SERVER_URL = "http://ongapi.alkemy.org/api/";
+				SERVER_URL = "http://ongapi.alkemy.org/api";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
