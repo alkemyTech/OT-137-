@@ -126,13 +126,13 @@
         </view>
     </objects>
     <designables>
-         <designable name="P4j-wf-POr">
-             <size key="intrinsicContentSize" width="-1" height="35"/>
-         </designable>
-         <designable name="Qvi-gu-7mY">
-             <size key="intrinsicContentSize" width="-1" height="35"/>
-         </designable>
-     </designables>
+        <designable name="P4j-wf-POr">
+            <size key="intrinsicContentSize" width="-1" height="35"/>
+        </designable>
+        <designable name="Qvi-gu-7mY">
+            <size key="intrinsicContentSize" width="-1" height="35"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Background-Somos-Mas" width="1284" height="2778"/>
         <systemColor name="systemBackgroundColor">
