@@ -15,10 +15,9 @@ struct Constants {
         
         
         struct Endpoints {
-            
             static let LOGIN = "/login"
             static let REGISTER = "register"
-            
+            static let NEWS = "/news"
         }
     }
     
