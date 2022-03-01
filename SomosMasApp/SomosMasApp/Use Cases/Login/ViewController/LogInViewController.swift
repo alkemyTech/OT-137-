@@ -18,10 +18,10 @@ class LogInViewController: UIViewController {
     
     
     let somosMasImageView: UIImageView = {
-        let logo = UIImage(named: "LOGO-SOMOS-MAS")
+        let logo = UIImage(named: "LOGO-SOMOS MAS")
         let imageView = UIImageView(image: logo)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     

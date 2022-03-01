@@ -59,12 +59,11 @@ class SignUpViewController: UIViewController {
     
     func showSignUpButton() {
         createAccountButton.isEnabled = true
-        createAccountButton.tintColor = .darkGray
     }
     
     private func hideSignUpButton() {
         createAccountButton.isEnabled = false
-        createAccountButton.tintColor = .clear
+        createAccountButton.backgroundColor = .clear
     }
     
     func setupTextBehavior() {
@@ -136,6 +135,7 @@ class SignUpViewController: UIViewController {
         passwordField.setupUnderline()
         confirmPasswordField.setupUnderline()
         
+        //Icons on the left of text fields
         let user = UIImage(systemName: "person")
         addLeftImage(txtField: nameField, andimage: user!)
         let mail = UIImage(systemName: "envelope")
