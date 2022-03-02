@@ -26,6 +26,7 @@
 		8824C18927A7811900914A57 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18827A7811800914A57 /* Observable.swift */; };
 		8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18B27A7817200914A57 /* Strings+Extensions.swift */; };
 		8826AE2227A9435100215304 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826AE2127A9435100215304 /* LoginTests.swift */; };
+		8834C8AE27D0102400E04334 /* SlidesDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834C8AD27D0102400E04334 /* SlidesDataResponse.swift */; };
 		8878DB8027B0858F00676D03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB7F27B0858F00676D03 /* Constants.swift */; };
 		8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8527B0885900676D03 /* LoginUserResponse.swift */; };
 		8878DB8827B08A3000676D03 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878DB8727B08A3000676D03 /* LoginDataResponse.swift */; };
@@ -91,6 +92,7 @@
 		8824C18827A7811800914A57 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		8824C18B27A7817200914A57 /* Strings+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extensions.swift"; sourceTree = "<group>"; };
 		8826AE2127A9435100215304 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		8834C8AD27D0102400E04334 /* SlidesDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesDataResponse.swift; sourceTree = "<group>"; };
 		8878DB7F27B0858F00676D03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8878DB8527B0885900676D03 /* LoginUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserResponse.swift; sourceTree = "<group>"; };
 		8878DB8727B08A3000676D03 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
@@ -324,6 +326,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8834C8AB27D00FBE00E04334 /* LoginDTO */ = {
+			isa = PBXGroup;
+			children = (
+				8878DB8527B0885900676D03 /* LoginUserResponse.swift */,
+				8878DB8727B08A3000676D03 /* LoginDataResponse.swift */,
+			);
+			path = LoginDTO;
+			sourceTree = "<group>";
+		};
+		8834C8AC27D00FD100E04334 /* SlidesDTO */ = {
+			isa = PBXGroup;
+			children = (
+				8834C8AD27D0102400E04334 /* SlidesDataResponse.swift */,
+			);
+			path = SlidesDTO;
+			sourceTree = "<group>";
+		};
 		8878DB8127B086E700676D03 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,8 +357,8 @@
 		8878DB8427B0884100676D03 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8878DB8527B0885900676D03 /* LoginUserResponse.swift */,
-				8878DB8727B08A3000676D03 /* LoginDataResponse.swift */,
+				8834C8AC27D00FD100E04334 /* SlidesDTO */,
+				8834C8AB27D00FBE00E04334 /* LoginDTO */,
 				5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */,
 				EAD2C2DC27C432440024B8B3 /* NewsDataResponse.swift */,
 			);
@@ -740,6 +759,7 @@
 				88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
+				8834C8AE27D0102400E04334 /* SlidesDataResponse.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
 				5CC7ABE027BD6FC300A96AD8 /* SignUpAPI.swift in Sources */,
