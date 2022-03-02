@@ -41,32 +41,32 @@ class LogInViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         loginViewModel.loginUser { loginStatus in
             loginStatus ? self.goToMainTabBar() : self.showModal()
-            //TODO: [OT137-26]
+             //TODO: [OT137-26]
         }
     }
-    
+
     @IBAction func createButtonPressed(_ sender: UIButton) {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
-    
+
     func goToMainTabBar() {
         let mainTab = tabCoordinator.start()
         setRootViewController(viewController: mainTab)
     }
-    
+
     func showModal() {
     showAlertWithTitleRetry(title: "Error de autenticación", message: "Error a la hora de loguearse" ,titleButton: "Aceptar") {
         self.loginButton.isEnabled = false
         }
     }
-    
+
     func bindData() {
         loginViewModel.isButtonLoginShow.bind { [weak self] in
             $0 ? self?.showLoginButton() : self?.hideLoginButton()
         }
     }
-    
+
     func showLoginButton() {
         loginButton.isEnabled = true
     }

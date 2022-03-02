@@ -16,6 +16,12 @@
 		5C40E74727A1DD88008C15A5 /* SomosMasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E74627A1DD88008C15A5 /* SomosMasAppTests.swift */; };
 		5C40E75127A1DD88008C15A5 /* SomosMasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */; };
 		5C40E75327A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */; };
+		5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */; };
+		5CC7ABDE27BD6E2000A96AD8 /* SignUpDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */; };
+		5CC7ABE027BD6FC300A96AD8 /* SignUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7ABDF27BD6FC300A96AD8 /* SignUpAPI.swift */; };
+		62ABB0D827CF9263000DF3BF /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */; };
+		62ABB0D927CF9263000DF3BF /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */; };
+		62ABB0DC27CFA013000DF3BF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABB0DB27CFA012000DF3BF /* HomeModel.swift */; };
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
 		8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C17E27A7705500914A57 /* CredentialsModel.swift */; };
 		8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18127A770AE00914A57 /* LoginViewModel.swift */; };
@@ -79,6 +85,12 @@
 		5C40E74C27A1DD88008C15A5 /* SomosMasAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomosMasAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C40E75027A1DD88008C15A5 /* SomosMasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITests.swift; sourceTree = "<group>"; };
 		5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomosMasAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = "SomosMasApp/Use Cases/SignUp/ViewModel/SignUpViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataResponse.swift; sourceTree = "<group>"; };
+		5CC7ABDF27BD6FC300A96AD8 /* SignUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPI.swift; sourceTree = "<group>"; };
+		62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		62ABB0DB27CFA012000DF3BF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeModel.swift; path = "SomosMasApp/Use Cases/Home/Model/HomeModel.swift"; sourceTree = SOURCE_ROOT; };
 		8824C17E27A7705500914A57 /* CredentialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
 		8824C18127A770AE00914A57 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8824C18627A7738600914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
@@ -152,6 +164,7 @@
 				5C40E72D27A1DD86008C15A5 /* Products */,
 				F06CA84BD7D1049AF297C98F /* Pods */,
 				861E0FC2397CB804A40BDC1C /* Frameworks */,
+				5CC7ABDC27BD671D00A96AD8 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +210,30 @@
 				5C40E75227A1DD88008C15A5 /* SomosMasAppUITestsLaunchTests.swift */,
 			);
 			path = SomosMasAppUITests;
+			sourceTree = "<group>";
+		};
+		5CC7ABDC27BD671D00A96AD8 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		62ABB0D527CF9238000DF3BF /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		62ABB0DA27CF9FF0000DF3BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62ABB0DB27CFA012000DF3BF /* HomeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		861E0FC2397CB804A40BDC1C /* Frameworks */ = {
@@ -315,6 +352,7 @@
 				8878DB8427B0884100676D03 /* Data */,
 				8878DB8927B08C1100676D03 /* APIManager.swift */,
 				EAD2C2DE27C433C50024B8B3 /* NewsAPI.swift */,
+				5CC7ABDF27BD6FC300A96AD8 /* SignUpAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -324,6 +362,7 @@
 			children = (
 				8878DB8527B0885900676D03 /* LoginUserResponse.swift */,
 				8878DB8727B08A3000676D03 /* LoginDataResponse.swift */,
+				5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */,
 				EAD2C2DC27C432440024B8B3 /* NewsDataResponse.swift */,
 			);
 			path = Data;
@@ -366,6 +405,8 @@
 		EA36806327B6BA32001A8757 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				62ABB0DA27CF9FF0000DF3BF /* Model */,
+				62ABB0D527CF9238000DF3BF /* CollectionCell */,
 				EA36806827B6BAC2001A8757 /* View */,
 				EA36806927B6BACA001A8757 /* ViewController */,
 				EAD2C2E327C439360024B8B3 /* ViewModel */,
@@ -376,6 +417,7 @@
 		EA36806827B6BAC2001A8757 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */,
 				EA36806527B6BA44001A8757 /* HomeViewController.xib */,
 			);
 			path = View;
@@ -574,6 +616,7 @@
 				EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */,
+				62ABB0D927CF9263000DF3BF /* SliderCollectionViewCell.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
@@ -708,21 +751,26 @@
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
 				EAD2C2DD27C432440024B8B3 /* NewsDataResponse.swift in Sources */,
 				8824C18C27A7817200914A57 /* Strings+Extensions.swift in Sources */,
+				5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */,
 				88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
+				62ABB0DC27CFA013000DF3BF /* HomeModel.swift in Sources */,
 				EAD2C2DF27C433C50024B8B3 /* NewsAPI.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				88A4090C27C721C4006AF2EB /* UIViewController+Extensions.swift in Sources */,
 				EA36806627B6BA44001A8757 /* HomeViewController.swift in Sources */,
 				8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */,
 				EA783F6927B92E8900241BA8 /* Modals.swift in Sources */,
+				5CC7ABDE27BD6E2000A96AD8 /* SignUpDataResponse.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,
+				62ABB0D827CF9263000DF3BF /* SliderCollectionViewCell.swift in Sources */,
 				88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,
 				5C40E73027A1DD86008C15A5 /* AppDelegate.swift in Sources */,
 				5C40E73227A1DD86008C15A5 /* SceneDelegate.swift in Sources */,
+				5CC7ABE027BD6FC300A96AD8 /* SignUpAPI.swift in Sources */,
 				EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */,
 				EAD69FBA27A5E3E60015948E /* CustomTextField.swift in Sources */,
 				EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */,
@@ -916,7 +964,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SERVER_URL = "http://ongapi.alkemy.org/api/";
+				SERVER_URL = "http://ongapi.alkemy.org/api";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -946,7 +994,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.SomosMasApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SERVER_URL = "http://ongapi.alkemy.org/api/";
+				SERVER_URL = "http://ongapi.alkemy.org/api";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
