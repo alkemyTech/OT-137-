@@ -40,6 +40,7 @@
 		EA67BC8B27BC105200480505 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67BC8A27BC105200480505 /* SignUpModel.swift */; };
 		EA6DC53527CEA83D00C8C69A /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6DC53327CEA83D00C8C69A /* NewsCollectionViewCell.swift */; };
 		EA6DC53627CEA83D00C8C69A /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6DC53427CEA83D00C8C69A /* NewsCollectionViewCell.xib */; };
+		EA6DC53A27CFE41F00C8C69A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6DC53927CFE41F00C8C69A /* HomeViewController.xib */; };
 		EA73029E27B16643009C0263 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73029D27B16643009C0263 /* SignUpViewModel.swift */; };
 		EA783F6927B92E8900241BA8 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA783F6827B92E8900241BA8 /* Modals.swift */; };
 		EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */; };
@@ -111,6 +112,7 @@
 		EA67BC8A27BC105200480505 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		EA6DC53327CEA83D00C8C69A /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA6DC53427CEA83D00C8C69A /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA6DC53927CFE41F00C8C69A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EA73029D27B16643009C0263 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA783F6827B92E8900241BA8 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 		EA941AF827AD4DF3004BD17B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 		EA36806827B6BAC2001A8757 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA6DC53927CFE41F00C8C69A /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
+				EA6DC53A27CFE41F00C8C69A /* HomeViewController.xib in Resources */,
 				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

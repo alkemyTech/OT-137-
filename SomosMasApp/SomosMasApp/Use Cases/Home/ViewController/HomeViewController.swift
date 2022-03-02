@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.setBinds()
         self.homeViewModel.getNews()
-        self.setupLabel()
+        self.setupNewsLabel()
         self.setupNewsCollections()
     }
     
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         exit(0)
     }
     
-    func setupLabel(){
+    func setupNewsLabel(){
         newsTitleLabel = UILabel()
         
         self.view.addSubview(newsTitleLabel)
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         
         newsTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         newsTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        newsTitleLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 0).isActive = true
+        newsTitleLabel.topAnchor.constraint(equalTo: exampleCollection.bottomAnchor, constant: 20).isActive = true
         newsTitleLabel.heightAnchor.constraint(equalToConstant: 23).isActive = true
         newsTitleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
         newsCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         newsCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         newsCollectionView.topAnchor.constraint(equalTo: newsTitleLabel.bottomAnchor, constant: 10).isActive = true
-        newsCollectionView.heightAnchor.constraint(equalToConstant: 205).isActive = true
+        newsCollectionView.heightAnchor.constraint(equalToConstant: 240).isActive = true
         
         newsCollectionView.delegate = self
         newsCollectionView.dataSource = self
@@ -58,7 +58,7 @@ class HomeViewController: UIViewController {
         let nibNews = UINib(nibName: "NewsCollectionViewCell", bundle: nil)
         newsCollectionView.register(nibNews, forCellWithReuseIdentifier: "NewsCollectionViewCell")
         
-        newsCollectionViewFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 160)
+        newsCollectionViewFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 240)
         newsCollectionViewFlow.scrollDirection = .horizontal
         newsCollectionViewFlow.sectionInset.left = 12
         newsCollectionViewFlow.sectionInset.right = 12
