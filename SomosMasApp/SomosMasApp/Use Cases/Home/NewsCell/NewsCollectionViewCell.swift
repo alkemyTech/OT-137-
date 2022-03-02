@@ -20,9 +20,11 @@ class NewsCollectionViewCell: UICollectionViewCell {
     
     func getImage(linkData: String){
         let request = AF.request(linkData)
-        request.response { dataResponse in
-            guard let data = dataResponse.data else {return}
-            self.newsImage.image = UIImage(data: data) ?? UIImage(named: "LOGO-SOMOS MAS")
+        DispatchQueue.global(qos: .background).async {
+            request.response { dataResponse in
+                guard let data = dataResponse.data else {return}
+                self.newsImage.image = UIImage(data: data) ?? UIImage(named: "LOGO-SOMOS MAS")
+            }
         }
         self.newsImage.contentMode = .scaleAspectFill
         self.newsImage.clipsToBounds = true
