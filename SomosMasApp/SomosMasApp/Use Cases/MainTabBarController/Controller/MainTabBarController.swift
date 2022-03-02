@@ -25,7 +25,6 @@ class MainTabBarController: UITabBarController {
     private func setupViewControllers() {
         
         let homeViewController = HomeViewController(nibName :"HomeViewController",bundle : nil)
-        homeViewController.title = "Home"
         let navControllerHomeView = UINavigationController(rootViewController: homeViewController)
         navControllerHomeView.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
 
