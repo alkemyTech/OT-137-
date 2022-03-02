@@ -14,12 +14,12 @@ struct NewsDataResponse: Codable {
 }
 
 struct News: Codable {
-    let id: Int
-    let name: String
+    let id: Int?
+    let name: String?
     let content: String?
-    let image: String
+    let image: String?
     let categoryID: Int?
-    let createdAt, updatedAt: String
+    let createdAt, updatedAt: String?
     let groupID: Int?
 
     enum CodingKeys: String, CodingKey {

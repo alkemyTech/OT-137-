@@ -34,5 +34,4 @@ class MainTabBarController: UITabBarController {
 
         viewControllers = [navControllerHomeView, vc2]
     }
-
 }

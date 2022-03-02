@@ -134,13 +134,10 @@ class LogInViewController: UIViewController {
         txtField.leftViewMode = .always
     }
     
-    
     lazy var indicatorView: UIActivityIndicatorView = {
             let view = UIActivityIndicatorView(style: .medium)
             view.color = .white
             view.translatesAutoresizingMaskIntoConstraints = false
             return view
         }()
-    
-    
 }

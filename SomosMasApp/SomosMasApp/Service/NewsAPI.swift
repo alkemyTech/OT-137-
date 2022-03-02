@@ -14,7 +14,7 @@ class NewsAPI {
     typealias errorHandler = (_ errorData: String) -> Void
 
     let baseUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
-    let endPoint = "news"
+    let endPoint = "/news"
 
     func getNews(onSuccess: @escaping completionHandler, onError: @escaping errorHandler){
 
