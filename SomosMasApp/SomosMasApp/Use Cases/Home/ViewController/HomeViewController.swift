@@ -9,30 +9,22 @@ import UIKit
 
 class HomeViewController: UIViewController{
     
-    
-
     var homeViewModel = HomeViewModel()
     var newsArray = [News]()
-<<<<<<< HEAD
     var newsCollectionView: UICollectionView!
     var newsTitleLabel: UILabel!
-=======
     var titleLabel: UILabel!
     var bodyLabel: UILabel!
     var exampleCollection: UICollectionView!
->>>>>>> develop
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBinds()
         self.homeViewModel.getNews()
-<<<<<<< HEAD
+        self.setupLabel()
+        self.setupCollection()
         self.setupNewsLabel()
         self.setupNewsCollections()
-=======
-        setupLabel()
-        setupCollection()
->>>>>>> develop
     }
     
     func setupLabel(){
@@ -46,8 +38,6 @@ class HomeViewController: UIViewController{
                 titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 60).isActive = true
                 titleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
                 titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-
-           
        }
        
        func setupCollection(){
@@ -138,10 +128,9 @@ class HomeViewController: UIViewController{
             print("Termina la consulta")
         }
     }
-    
-    
 }
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             
@@ -150,42 +139,23 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             switch collectionView {
             case exampleCollection:
                 numbersItems = homeViewModel.images.count
+            case newsCollectionView:
+                numbersItems = self.newsArray.count
             default:
-                print("esto nunca va a pasar")
+                print("Error")
             }
-
             return numbersItems
         }
-        
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as? SliderCollectionViewCell
-            cell?.imageCollectionViewCell.image = homeViewModel.images[indexPath.row].image
-            cell?.titleCollectionViewCell.text = homeViewModel.images[indexPath.row].title
-            cell?.descriptionCollectionViewCell.text = homeViewModel.images[indexPath.row].text
-            
-                return cell ?? SliderCollectionViewCell()
-            }
-}
-
-extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        var numbersItems: Int = 0
-        
-        switch collectionView {
-        case newsCollectionView:
-            numbersItems = self.newsArray.count
-        default:
-            print("Error")
-        }
-
-        return numbersItems
-    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
+        case collectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as? SliderCollectionViewCell
+            cell?.imageCollectionViewCell.image = homeViewModel.images[indexPath.row].image
+            cell?.titleCollectionViewCell.text = homeViewModel.images[indexPath.row].title
+            cell?.descriptionCollectionViewCell.text = homeViewModel.images[indexPath.row].text
+            return cell ?? SliderCollectionViewCell()
         case newsCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as? NewsCollectionViewCell
             cell?.getImage(linkData: newsArray[indexPath.row].image ?? "imagen")
