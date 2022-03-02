@@ -11,6 +11,9 @@ import Alamofire
 class APIManager {
     
     static let shared = APIManager()
+    
+    typealias completionHandlerSlides = (_ requestStatus: SlidesDataResponse) -> Void
+    typealias errorHandler = (_ errorData: String) -> Void
 
     
     func loginUser(email: String, password: String,  sucess: @escaping (_ loginDataResponse: LoginUserResponse) -> (), failure: @escaping ( _ error: Error?) -> () ) {
@@ -27,6 +30,22 @@ class APIManager {
             }
         }
         
+    }
+    
+    func getSlides(onSuccess: @escaping completionHandlerSlides ,onFailure: @escaping errorHandler ) {
+        
+        let baseUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
+        let endpoint = Constants.URL.Endpoints.SLIDES
+        let url = baseUrl+endpoint
+        
+        AF.request(url, method: .get).validate(statusCode: 200...299).responseDecodable(of: SlidesDataResponse.self, decoder: JSONDecoder()) { response in
+            switch response.result {
+            case .success(let dataResponse):
+                onSuccess(dataResponse)
+            case .failure(let errorData):
+                onFailure(errorData.errorDescription ?? "Error")
+            }
+        }
     }
 }
 

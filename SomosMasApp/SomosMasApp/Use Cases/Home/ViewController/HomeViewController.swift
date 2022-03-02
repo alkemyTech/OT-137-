@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
 
     var homeViewModel = HomeViewModel()
     var newsArray = [News]()
+    var slidesArray = [Slides]()
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -18,6 +19,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.setBinds()
         self.homeViewModel.getNews()
+        self.homeViewModel.getSlides()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -33,6 +35,13 @@ class HomeViewController: UIViewController {
             let prefix = arrayNews.prefix(5)
             self.newsArray = Array(prefix)
             print(self.newsArray)
+        }
+        
+        self.homeViewModel.bindRequestSlidesData = {(_ arraySlides: [Slides]) -> Void in
+            let prefix = arraySlides.prefix(6)
+            self.slidesArray = Array(prefix)
+            print(self.slidesArray)
+            
         }
         
         self.homeViewModel.bindErrorMessage = {(_ errorMessage: String) -> Void in

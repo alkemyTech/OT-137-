@@ -10,7 +10,7 @@ import Foundation
 struct SlidesDataResponse: Codable {
     
     let success: Bool
-    let data: Slides
+    let data: [Slides]
     let message: String
     
     enum CodingKeys: String, CodingKey {
