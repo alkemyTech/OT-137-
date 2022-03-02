@@ -40,8 +40,6 @@ class HomeViewController: UIViewController {
         self.homeViewModel.bindRequestSlidesData = {(_ arraySlides: [Slides]) -> Void in
             let prefix = arraySlides.prefix(6)
             self.slidesArray = Array(prefix)
-            print(self.slidesArray)
-            
         }
         
         self.homeViewModel.bindErrorMessage = {(_ errorMessage: String) -> Void in
