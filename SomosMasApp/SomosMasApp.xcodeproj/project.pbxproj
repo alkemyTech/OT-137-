@@ -19,6 +19,9 @@
 		5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */; };
 		5CC7ABDE27BD6E2000A96AD8 /* SignUpDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */; };
 		5CC7ABE027BD6FC300A96AD8 /* SignUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7ABDF27BD6FC300A96AD8 /* SignUpAPI.swift */; };
+		62ABB0D827CF9263000DF3BF /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */; };
+		62ABB0D927CF9263000DF3BF /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */; };
+		62ABB0DC27CFA013000DF3BF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABB0DB27CFA012000DF3BF /* HomeModel.swift */; };
 		69E9D7519B98EB9DD67CCA9C /* Pods_SomosMasApp_SomosMasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9391F8B343E0066CE0FE3C /* Pods_SomosMasApp_SomosMasAppUITests.framework */; };
 		8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C17E27A7705500914A57 /* CredentialsModel.swift */; };
 		8824C18227A770AE00914A57 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824C18127A770AE00914A57 /* LoginViewModel.swift */; };
@@ -87,6 +90,9 @@
 		5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = "SomosMasApp/Use Cases/SignUp/ViewModel/SignUpViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		5CC7ABDD27BD6E2000A96AD8 /* SignUpDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataResponse.swift; sourceTree = "<group>"; };
 		5CC7ABDF27BD6FC300A96AD8 /* SignUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPI.swift; sourceTree = "<group>"; };
+		62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		62ABB0DB27CFA012000DF3BF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeModel.swift; path = "SomosMasApp/Use Cases/Home/Model/HomeModel.swift"; sourceTree = SOURCE_ROOT; };
 		8824C17E27A7705500914A57 /* CredentialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsModel.swift; sourceTree = "<group>"; };
 		8824C18127A770AE00914A57 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8824C18627A7738600914A57 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +222,22 @@
 				5CA4B52F27B5707A0072C729 /* SignUpViewModel.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		62ABB0D527CF9238000DF3BF /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				62ABB0D627CF9263000DF3BF /* SliderCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		62ABB0DA27CF9FF0000DF3BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62ABB0DB27CFA012000DF3BF /* HomeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		861E0FC2397CB804A40BDC1C /* Frameworks */ = {
@@ -388,6 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				EA6DC53227CEA81500C8C69A /* NewsCell */,
+				62ABB0DA27CF9FF0000DF3BF /* Model */,
+				62ABB0D527CF9238000DF3BF /* CollectionCell */,
 				EA36806827B6BAC2001A8757 /* View */,
 				EA36806927B6BACA001A8757 /* ViewController */,
 				EAD2C2E327C439360024B8B3 /* ViewModel */,
@@ -398,7 +422,9 @@
 		EA36806827B6BAC2001A8757 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EA6DC53927CFE41F00C8C69A /* HomeViewController.xib */,
+
+				62ABB0D727CF9263000DF3BF /* SliderCollectionViewCell.xib */,
+				EA36806527B6BA44001A8757 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -605,6 +631,8 @@
 				88943CB327BF25EF007FA7E1 /* MainTabBarController.xib in Resources */,
 				EA941AFB27AD4DF3004BD17B /* SignUpViewController.xib in Resources */,
 				5C40E73C27A1DD88008C15A5 /* LaunchScreen.storyboard in Resources */,
+				EA36806727B6BA44001A8757 /* HomeViewController.xib in Resources */,
+				62ABB0D927CF9263000DF3BF /* SliderCollectionViewCell.xib in Resources */,
 				5C40E73927A1DD88008C15A5 /* Assets.xcassets in Resources */,
 				EA6DC53A27CFE41F00C8C69A /* HomeViewController.xib in Resources */,
 				8824C18727A7738600914A57 /* LogInViewController.xib in Resources */,
@@ -743,6 +771,7 @@
 				5CA4B53027B5707A0072C729 /* SignUpViewModel.swift in Sources */,
 				88943CB227BF25EF007FA7E1 /* MainTabBarController.swift in Sources */,
 				8878DB8027B0858F00676D03 /* Constants.swift in Sources */,
+				62ABB0DC27CFA013000DF3BF /* HomeModel.swift in Sources */,
 				EAD2C2DF27C433C50024B8B3 /* NewsAPI.swift in Sources */,
 				8824C17F27A7705500914A57 /* CredentialsModel.swift in Sources */,
 				88A4090C27C721C4006AF2EB /* UIViewController+Extensions.swift in Sources */,
@@ -752,6 +781,7 @@
 				5CC7ABDE27BD6E2000A96AD8 /* SignUpDataResponse.swift in Sources */,
 				8878DB8A27B08C1100676D03 /* APIManager.swift in Sources */,
 				8878DB8627B0885900676D03 /* LoginUserResponse.swift in Sources */,
+				62ABB0D827CF9263000DF3BF /* SliderCollectionViewCell.swift in Sources */,
 				88943CB827BF2683007FA7E1 /* Coordinators.swift in Sources */,
 				EA941AFA27AD4DF3004BD17B /* SignUpViewController.swift in Sources */,
 				8824C18927A7811900914A57 /* Observable.swift in Sources */,

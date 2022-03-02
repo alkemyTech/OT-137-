@@ -7,20 +7,75 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController{
+    
+    
 
     var homeViewModel = HomeViewModel()
     var newsArray = [News]()
+<<<<<<< HEAD
     var newsCollectionView: UICollectionView!
     var newsTitleLabel: UILabel!
+=======
+    var titleLabel: UILabel!
+    var bodyLabel: UILabel!
+    var exampleCollection: UICollectionView!
+>>>>>>> develop
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBinds()
         self.homeViewModel.getNews()
+<<<<<<< HEAD
         self.setupNewsLabel()
         self.setupNewsCollections()
+=======
+        setupLabel()
+        setupCollection()
+>>>>>>> develop
     }
+    
+    func setupLabel(){
+                titleLabel = UILabel()
+                self.view.addSubview(titleLabel)
+                titleLabel.text = "Bienvenidos"
+                titleLabel.font = .systemFont(ofSize: 25)
+                titleLabel.textAlignment = .center
+                titleLabel.translatesAutoresizingMaskIntoConstraints = false
+                titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+                titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 60).isActive = true
+                titleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+                titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+
+           
+       }
+       
+       func setupCollection(){
+           
+        let exampleCollectionsFlow = UICollectionViewFlowLayout()
+                   exampleCollection = UICollectionView(frame: .zero, collectionViewLayout: exampleCollectionsFlow)
+                   
+        self.view.addSubview(exampleCollection)
+                   exampleCollection.translatesAutoresizingMaskIntoConstraints = false
+                   exampleCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+                   exampleCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+                exampleCollection.topAnchor.constraint(equalTo: titleLabel.topAnchor, constant: 25).isActive = true
+           
+                    
+                   exampleCollection.heightAnchor.constraint(equalToConstant: 315).isActive = true
+                   
+                   exampleCollection.delegate = self
+                   exampleCollection.dataSource = self
+                   
+                   let nibCell = UINib(nibName: "SliderCollectionViewCell", bundle: nil)
+                   exampleCollection.register(nibCell, forCellWithReuseIdentifier: "SliderCollectionViewCell")
+                   
+                   exampleCollectionsFlow.scrollDirection = .horizontal
+                   exampleCollectionsFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 320)
+                   exampleCollectionsFlow.sectionInset.right = 20
+                   exampleCollectionsFlow.sectionInset.left = 20
+
+       }
     
     override func viewWillDisappear(_ animated: Bool) {
         exit(0)
@@ -83,6 +138,33 @@ class HomeViewController: UIViewController {
             print("Termina la consulta")
         }
     }
+    
+    
+}
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            
+            var numbersItems: Int = 0
+            
+            switch collectionView {
+            case exampleCollection:
+                numbersItems = homeViewModel.images.count
+            default:
+                print("esto nunca va a pasar")
+            }
+
+            return numbersItems
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as? SliderCollectionViewCell
+            cell?.imageCollectionViewCell.image = homeViewModel.images[indexPath.row].image
+            cell?.titleCollectionViewCell.text = homeViewModel.images[indexPath.row].title
+            cell?.descriptionCollectionViewCell.text = homeViewModel.images[indexPath.row].text
+            
+                return cell ?? SliderCollectionViewCell()
+            }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
