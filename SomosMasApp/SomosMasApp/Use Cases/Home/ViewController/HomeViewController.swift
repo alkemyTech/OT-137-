@@ -50,9 +50,7 @@ class HomeViewController: UIViewController{
         exampleCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         exampleCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         exampleCollection.topAnchor.constraint(equalTo: titleLabel.topAnchor, constant: 25).isActive = true
-        
-        
-        exampleCollection.heightAnchor.constraint(equalToConstant: 315).isActive = true
+        exampleCollection.heightAnchor.constraint(equalToConstant: 320).isActive = true
         
         exampleCollection.delegate = self
         exampleCollection.dataSource = self
@@ -61,7 +59,7 @@ class HomeViewController: UIViewController{
         exampleCollection.register(nibCell, forCellWithReuseIdentifier: "SliderCollectionViewCell")
         
         exampleCollectionsFlow.scrollDirection = .horizontal
-        exampleCollectionsFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 320)
+        exampleCollectionsFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 315)
         exampleCollectionsFlow.sectionInset.right = 20
         exampleCollectionsFlow.sectionInset.left = 20
         
@@ -73,7 +71,6 @@ class HomeViewController: UIViewController{
     
     func setupNewsLabel(){
         newsTitleLabel = UILabel()
-        
         self.view.addSubview(newsTitleLabel)
         newsTitleLabel.text = "Últimas novedades"
         newsTitleLabel.font = .systemFont(ofSize: 20)
@@ -81,32 +78,32 @@ class HomeViewController: UIViewController{
         
         newsTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         newsTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        newsTitleLabel.topAnchor.constraint(equalTo: exampleCollection.bottomAnchor, constant: 20).isActive = true
+        newsTitleLabel.topAnchor.constraint(equalTo: exampleCollection.bottomAnchor, constant: 15).isActive = true
         newsTitleLabel.heightAnchor.constraint(equalToConstant: 23).isActive = true
         newsTitleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
     func setupNewsCollections() {
         let newsCollectionViewFlow = UICollectionViewFlowLayout()
+        newsCollectionViewFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 240)
+        newsCollectionViewFlow.scrollDirection = .horizontal
+        newsCollectionViewFlow.sectionInset.left = 12
+        newsCollectionViewFlow.sectionInset.right = 12
+        
         newsCollectionView = UICollectionView(frame: .zero, collectionViewLayout: newsCollectionViewFlow)
         
         self.view.addSubview(newsCollectionView)
         newsCollectionView.translatesAutoresizingMaskIntoConstraints = false
         newsCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         newsCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        newsCollectionView.topAnchor.constraint(equalTo: newsTitleLabel.bottomAnchor, constant: 10).isActive = true
-        newsCollectionView.heightAnchor.constraint(equalToConstant: 240).isActive = true
+        newsCollectionView.topAnchor.constraint(equalTo: newsTitleLabel.bottomAnchor, constant: 5).isActive = true
+        newsCollectionView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
         newsCollectionView.delegate = self
         newsCollectionView.dataSource = self
         
         let nibNews = UINib(nibName: "NewsCollectionViewCell", bundle: nil)
         newsCollectionView.register(nibNews, forCellWithReuseIdentifier: "NewsCollectionViewCell")
-        
-        newsCollectionViewFlow.itemSize = CGSize(width: view.frame.width * 0.75, height: 240)
-        newsCollectionViewFlow.scrollDirection = .horizontal
-        newsCollectionViewFlow.sectionInset.left = 12
-        newsCollectionViewFlow.sectionInset.right = 12
     }
     
     func setBinds() {
@@ -160,7 +157,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as? NewsCollectionViewCell
             cell?.getImage(linkData: newsArray[indexPath.row].image ?? "imagen")
             cell?.newsTitle.text = newsArray[indexPath.row].name
-            cell?.newsInfo.text = newsArray[indexPath.row].content
+            cell?.newsInfo.text = newsArray[indexPath.row].content?.removeEspecialCharacters
             return cell ?? NewsCollectionViewCell()
         default:
             return NewsCollectionViewCell()

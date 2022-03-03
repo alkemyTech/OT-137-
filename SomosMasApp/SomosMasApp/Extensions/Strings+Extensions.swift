@@ -9,6 +9,12 @@ import Foundation
 
 extension String {
     
+    var removeEspecialCharacters: String {
+            let testStringReplacedOccurences = self.replacingOccurrences(of: "<p>",
+                                                                         with: "").replacingOccurrences(of: "</p>", with: "").replacingOccurrences(of: "&nbsp;", with: "")
+            return testStringReplacedOccurences
+        }
+    
     var isValidUser: Bool {
         NSPredicate(format: "SELF MATCHES %@", "^(?=.{2,100}$)[A-Za-zÀ-ú][A-Za-zÀ-ú.'-]+(?: [A-Za-zÀ-ú.'-]+)* *$").evaluate(with: self)
     }

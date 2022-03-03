@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class HomeViewModel {
     let newsAPI = NewsAPI()
     var newsData: [News] = []{
