@@ -34,9 +34,7 @@ class APIManager {
     
     func getSlides(onSuccess: @escaping completionHandlerSlides ,onFailure: @escaping errorHandler ) {
         
-        let baseUrl = Constants.URL.BASE_URL
-        let endpoint = Constants.URL.Endpoints.SLIDES
-        let url = baseUrl+endpoint
+        let url = Constants.URL.BASE_URL+Constants.URL.Endpoints.SLIDES
         
         AF.request(url, method: .get).validate(statusCode: 200...299).responseDecodable(of: SlidesDataResponse.self, decoder: JSONDecoder()) { response in
             switch response.result {
