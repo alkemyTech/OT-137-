@@ -13,12 +13,14 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UnderlinedtextField!
     @IBOutlet weak var passwordTextField: UnderlinedtextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var buttonsContainer: UIView!
     @IBOutlet weak var credentials: UIView!
-    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var credentialTopConstraint: NSLayoutConstraint!
     
     let somosMasImageView: UIImageView = {
-        let logo = UIImage(named: "LOGO-SOMOS-MAS")
+        let logo = UIImage(named: "LOGO-SOMOS MAS")
         let imageView = UIImageView(image: logo)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
@@ -30,14 +32,9 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideLoginButton()
+        setupLayout()
         setupTextFields()
         bindData()
-        
-        //UI LogInLayout
-        
-        setupLayout()
-        
-        
     }
     
     //MARK: Button Action
@@ -68,7 +65,6 @@ class LogInViewController: UIViewController {
         loginViewModel.isButtonLoginShow.bind { [weak self] in
             $0 ? self?.showLoginButton() : self?.hideLoginButton()
         }
-
     }
 
     func showLoginButton() {
@@ -104,20 +100,17 @@ class LogInViewController: UIViewController {
         let topImageContainerView = UIView()
         view.addSubview(topImageContainerView)
         topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
-        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25).isActive = true
-        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
+        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
+        topImageContainerView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        topImageContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         //Subview contraints
         topImageContainerView.addSubview(somosMasImageView)
         somosMasImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
         somosMasImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
 
-        //credentials constraints
-        credentials.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor, constant: 40).isActive = true
-        
+        self.credentialTopConstraint.isActive = false
+        credentials.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor, constant: 20).isActive = true
         
         //Icons on the left of text fields
         let user = UIImage(systemName: "person")
@@ -141,13 +134,10 @@ class LogInViewController: UIViewController {
         txtField.leftViewMode = .always
     }
     
-    
     lazy var indicatorView: UIActivityIndicatorView = {
             let view = UIActivityIndicatorView(style: .medium)
             view.color = .white
             view.translatesAutoresizingMaskIntoConstraints = false
             return view
         }()
-    
-    
 }

@@ -49,7 +49,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-Dv-SP5" userLabel="Name">
                                     <rect key="frame" x="20" y="220" width="286" height="45"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
                                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -69,7 +69,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gtu-mK-yrJ" userLabel="Mail">
                                     <rect key="frame" x="20" y="285" width="286" height="45"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-R8-ptT" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-R8-ptT" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
                                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -161,9 +161,11 @@
                                                 <constraint firstAttribute="height" constant="45" id="07Q-ZG-Bgv"/>
                                                 <constraint firstAttribute="width" constant="150" id="iVO-V3-RJx"/>
                                             </constraints>
-                                            <color key="tintColor" systemColor="labelColor"/>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta"/>
+                                            <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                            </buttonConfiguration>
                                             <connections>
                                                 <action selector="createAccountAction:" destination="-1" eventType="touchUpInside" id="BGE-fJ-dtf"/>
                                             </connections>
@@ -209,9 +211,6 @@
     <resources>
         <image name="Background" width="1284" height="2778"/>
         <image name="LOGO-SOMOS MAS" width="200" height="200"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -51,4 +51,17 @@ class HomeViewModel {
             self.bindErrorMessage(errorData.debugDescription)
         }
     }
+    
+    let images = [
+        HomeModel(ti:"Primera imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 3")),
+        HomeModel(ti:"Segunda imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 5")),
+        HomeModel(ti:"Tercera imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 4")),
+        HomeModel(ti:"Cuarta imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 1")),
+        HomeModel(ti:"Quinta imagen", te:"Esto es una descripcion breve de la imagen,Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 8")),
+        HomeModel(ti:"Sexta imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 7")),
+        HomeModel(ti:"Septima imagen", te:"Esto es una descripcion breve de la imagen,Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 4")),
+        HomeModel(ti:"Octava imagen", te:"Esto es una descripcion breve de la imagen" ,im: #imageLiteral(resourceName: "Foto 1"))
+    ]
+    func slider() {
+    }
 }
