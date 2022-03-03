@@ -34,7 +34,7 @@ class APIManager {
     
     func getSlides(onSuccess: @escaping completionHandlerSlides ,onFailure: @escaping errorHandler ) {
         
-        let baseUrl = Bundle.main.object(forInfoDictionaryKey: "ServerURL") as! String
+        let baseUrl = Constants.URL.BASE_URL
         let endpoint = Constants.URL.Endpoints.SLIDES
         let url = baseUrl+endpoint
         

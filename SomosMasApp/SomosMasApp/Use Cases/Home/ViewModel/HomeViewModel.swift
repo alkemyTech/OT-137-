@@ -50,6 +50,5 @@ class HomeViewModel {
             self.bindEndRequest()
             self.bindErrorMessage(errorData.debugDescription)
         }
-
     }
 }
