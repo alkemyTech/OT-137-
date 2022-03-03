@@ -157,7 +157,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCollectionViewCell", for: indexPath) as? NewsCollectionViewCell
             cell?.getImage(linkData: newsArray[indexPath.row].image ?? "imagen")
             cell?.newsTitle.text = newsArray[indexPath.row].name
-            cell?.newsInfo.text = newsArray[indexPath.row].content
+            cell?.newsInfo.text = newsArray[indexPath.row].content?.removeEspecialCharacters
             return cell ?? NewsCollectionViewCell()
         default:
             return NewsCollectionViewCell()
