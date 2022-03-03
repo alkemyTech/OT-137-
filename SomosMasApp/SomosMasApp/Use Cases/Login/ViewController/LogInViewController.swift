@@ -31,8 +31,6 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.text = "anto.ni@gmail.com"
-        passwordTextField.text = "Pedro123444"
         hideLoginButton()
         setupLayout()
         setupTextFields()
