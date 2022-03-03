@@ -71,7 +71,6 @@ class HomeViewController: UIViewController{
     
     func setupNewsLabel(){
         newsTitleLabel = UILabel()
-        
         self.view.addSubview(newsTitleLabel)
         newsTitleLabel.text = "Últimas novedades"
         newsTitleLabel.font = .systemFont(ofSize: 20)
