@@ -26,11 +26,13 @@ class MainTabBarController: UITabBarController {
         
         let homeViewController = HomeViewController(nibName :"HomeViewController",bundle : nil)
         let navControllerHomeView = UINavigationController(rootViewController: homeViewController)
-        navControllerHomeView.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        navControllerHomeView.tabBarItem.image = UIImage(systemName: "house.fill")
+        navControllerHomeView.title = "Inicio"
 
         let vc2 = UIViewController()
         vc2.view.backgroundColor = UIColor.red
-        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
+        vc2.tabBarItem.image = UIImage(systemName: "note.text")
+        vc2.title = "Novedades"
 
         viewControllers = [navControllerHomeView, vc2]
     }

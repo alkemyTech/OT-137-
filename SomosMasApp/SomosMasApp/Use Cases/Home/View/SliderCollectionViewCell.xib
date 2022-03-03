@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="514" height="315"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-my-LW2">
-                                <rect key="frame" x="10" y="10" width="250" height="18"/>
+                                <rect key="frame" x="10" y="10" width="280" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="cL4-qf-NrE"/>
+                                    <constraint firstAttribute="width" constant="280" id="cL4-qf-NrE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKB-Yj-2TO">
-                                <rect key="frame" x="132" y="248" width="250" height="16"/>
+                                <rect key="frame" x="117" y="248" width="280" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
