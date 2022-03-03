@@ -21,6 +21,7 @@ class HomeViewController: UIViewController{
         super.viewDidLoad()
         self.setBinds()
         self.homeViewModel.getNews()
+        self.homeViewModel.getSlides()
         self.setupLabel()
         self.setupCollection()
         self.setupNewsLabel()
@@ -115,6 +116,9 @@ class HomeViewController: UIViewController{
             let prefix = arrayNews.prefix(5)
             self.newsArray = Array(prefix)
             self.newsCollectionView.reloadData()
+        }
+        
+        self.homeViewModel.bindRequestSlidesData = {(_ arraySlides: [Slides]) -> Void in
         }
         
         self.homeViewModel.bindErrorMessage = {(_ errorMessage: String) -> Void in
