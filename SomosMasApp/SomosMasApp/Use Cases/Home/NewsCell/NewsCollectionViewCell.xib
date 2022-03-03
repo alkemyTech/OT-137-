@@ -24,7 +24,6 @@
                                 <rect key="frame" x="0.0" y="38" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="MWQ-T9-TvI"/>
-                                    <constraint firstAttribute="width" constant="300" id="mC7-gN-Ule"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-l4-Qb5">
@@ -37,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOQ-QD-o8S">
-                                <rect key="frame" x="10" y="148" width="250" height="16"/>
+                                <rect key="frame" x="25" y="148" width="250" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,10 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DOQ-QD-o8S" firstAttribute="centerX" secondItem="QXZ-uR-dmh" secondAttribute="centerX" id="GCv-4d-p25"/>
                             <constraint firstItem="Ob5-Za-aAq" firstAttribute="top" secondItem="uhb-l4-Qb5" secondAttribute="bottom" constant="10" id="HIF-B8-65t"/>
                             <constraint firstAttribute="trailing" secondItem="Ob5-Za-aAq" secondAttribute="trailing" id="V82-Jk-Qd6"/>
                             <constraint firstItem="DOQ-QD-o8S" firstAttribute="top" secondItem="Ob5-Za-aAq" secondAttribute="bottom" constant="10" id="VGg-FX-5Bf"/>
-                            <constraint firstItem="DOQ-QD-o8S" firstAttribute="leading" secondItem="uhb-l4-Qb5" secondAttribute="leading" id="WZY-vU-gvW"/>
                             <constraint firstItem="Ob5-Za-aAq" firstAttribute="leading" secondItem="QXZ-uR-dmh" secondAttribute="leading" id="X9Y-N9-Zgr"/>
                             <constraint firstItem="uhb-l4-Qb5" firstAttribute="leading" secondItem="QXZ-uR-dmh" secondAttribute="leading" constant="10" id="ezn-v3-J5T"/>
                             <constraint firstItem="DOQ-QD-o8S" firstAttribute="width" secondItem="uhb-l4-Qb5" secondAttribute="width" id="hpA-yq-THB"/>

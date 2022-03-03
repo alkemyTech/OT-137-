@@ -19,6 +19,10 @@ class SliderCollectionViewCell: UICollectionViewCell {
         
         descriptionCollectionViewCell.lineBreakMode = .byWordWrapping
         descriptionCollectionViewCell.numberOfLines = 0
+        
+        self.imageCollectionViewCell.contentMode = .scaleAspectFill
+        self.imageCollectionViewCell.clipsToBounds = true
+        self.imageCollectionViewCell.layer.cornerRadius = 12
     }
 
 }
